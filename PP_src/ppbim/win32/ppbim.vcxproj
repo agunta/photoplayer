@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78289809-8919-42FD-A87C-3169FEE2B372}</ProjectGuid>
+    <RootNamespace>ppbim</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\obj\ppbim\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\obj\ppbim\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../xercesc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>xerces-c_2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../xercesc/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zc:wchar_t %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../xercesc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>xerces-c_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../xercesc/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ColCreationInformationType.cpp" />
+    <ClCompile Include="..\src\ColCreationType.cpp" />
+    <ClCompile Include="..\src\ColKeyword_anonymousType.cpp" />
+    <ClCompile Include="..\src\ColKeywordAnnotationType.cpp" />
+    <ClCompile Include="..\src\CollectionType_attributes.cpp" />
+    <ClCompile Include="..\src\CollectionType_content.cpp" />
+    <ClCompile Include="..\src\ColMpeg7.cpp" />
+    <ClCompile Include="..\src\ColTextAnnotationType.cpp" />
+    <ClCompile Include="..\src\ContentCollectionType.cpp" />
+    <ClCompile Include="..\src\ImageLocatorType.cpp" />
+    <ClCompile Include="..\src\InlineMediaType.cpp" />
+    <ClCompile Include="..\src\ReferenceType.cpp" />
+    <ClCompile Include="..\src\TitleMediaType.cpp" />
+    <ClCompile Include="..\src\Affiliation_anonymousType.cpp" />
+    <ClCompile Include="..\src\AgentType.cpp" />
+    <ClCompile Include="..\src\Base64Binary.cpp" />
+    <ClCompile Include="..\src\BimXMLUtil.cpp" />
+    <ClCompile Include="..\src\BitstreamReader.cpp" />
+    <ClCompile Include="..\src\BitstreamWriter.cpp" />
+    <ClCompile Include="..\src\ControlledTermUseType.cpp" />
+    <ClCompile Include="..\src\CreationCoord_anonymusType.cpp" />
+    <ClCompile Include="..\src\CreatorType.cpp" />
+    <ClCompile Include="..\src\DescAnyUri.cpp" />
+    <ClCompile Include="..\src\DescAnyUri_typecast.cpp" />
+    <ClCompile Include="..\src\DescriptionMetadataType.cpp" />
+    <ClCompile Include="..\src\DescriptionProfileType.cpp" />
+    <ClCompile Include="..\src\DescString.cpp" />
+    <ClCompile Include="..\src\DescString_typecast.cpp" />
+    <ClCompile Include="..\src\ElectronicAddressType.cpp" />
+    <ClCompile Include="..\src\GeographicPointType.cpp" />
+    <ClCompile Include="..\src\GeographicPosition_anonymusType.cpp" />
+    <ClCompile Include="..\src\HexBinary.cpp" />
+    <ClCompile Include="..\src\InlineTermDefinitionType.cpp" />
+    <ClCompile Include="..\src\MediaAgentType_content.cpp" />
+    <ClCompile Include="..\src\MPEG7IntegerVector.cpp" />
+    <ClCompile Include="..\src\Mpeg7Type_content.cpp" />
+    <ClCompile Include="..\src\OrganizationType.cpp" />
+    <ClCompile Include="..\src\PersonNameType.cpp" />
+    <ClCompile Include="..\src\PersonType.cpp" />
+    <ClCompile Include="..\src\PlaceType.cpp" />
+    <ClCompile Include="..\src\PostalAddress_anonymousType.cpp" />
+    <ClCompile Include="..\src\ProfileAndLevelIndication.cpp" />
+    <ClCompile Include="..\src\TermReferenceType.cpp" />
+    <ClCompile Include="..\src\TextualType.cpp" />
+    <ClCompile Include="..\src\TimePointType.cpp" />
+    <ClCompile Include="..\src\TimeType.cpp" />
+    <ClCompile Include="..\src\UTFUtil.cpp" />
+    <ClCompile Include="..\src\Frame_anonymousType.cpp" />
+    <ClCompile Include="..\src\ImageType.cpp" />
+    <ClCompile Include="..\src\ItemCreationCoord_anonymusType.cpp" />
+    <ClCompile Include="..\src\ItemCreationInformationType.cpp" />
+    <ClCompile Include="..\src\ItemCreationType.cpp" />
+    <ClCompile Include="..\src\ItemMpeg7.cpp" />
+    <ClCompile Include="..\src\ItemTimeType.cpp" />
+    <ClCompile Include="..\src\MediaFormatType.cpp" />
+    <ClCompile Include="..\src\MediaInformationType.cpp" />
+    <ClCompile Include="..\src\MediaInstanceType.cpp" />
+    <ClCompile Include="..\src\MediaLocatorType.cpp" />
+    <ClCompile Include="..\src\MediaProfileType.cpp" />
+    <ClCompile Include="..\src\NonNegativeInteger.cpp" />
+    <ClCompile Include="..\src\NonNegativeInteger_typecast.cpp" />
+    <ClCompile Include="..\src\SegmentType_content.cpp" />
+    <ClCompile Include="..\src\StillRegionFeatureType.cpp" />
+    <ClCompile Include="..\src\StillRegionType.cpp" />
+    <ClCompile Include="..\src\UniqueIDType.cpp" />
+    <ClCompile Include="..\src\VisualCoding_anonymousType.cpp" />
+    <ClCompile Include="..\src\ColorLayoutType.cpp" />
+    <ClCompile Include="..\src\ColorStructureType.cpp" />
+    <ClCompile Include="..\src\CSValues_anonymousType.cpp" />
+    <ClCompile Include="..\src\DominantColorType.cpp" />
+    <ClCompile Include="..\src\DominantColorValueType.cpp" />
+    <ClCompile Include="..\src\EdgeHistogramType.cpp" />
+    <ClCompile Include="..\src\HomogeneousTextureType.cpp" />
+    <ClCompile Include="..\src\ScalableColorType.cpp" />
+    <ClCompile Include="..\src\ValueListType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\ColCreationInformationType.h" />
+    <ClInclude Include="..\src\ColCreationType.h" />
+    <ClInclude Include="..\src\ColKeyword_anonymousType.h" />
+    <ClInclude Include="..\src\ColKeywordAnnotationType.h" />
+    <ClInclude Include="..\src\CollectionType_attributes.h" />
+    <ClInclude Include="..\src\CollectionType_content.h" />
+    <ClInclude Include="..\src\ColMpeg7.h" />
+    <ClInclude Include="..\src\ColTextAnnotationType.h" />
+    <ClInclude Include="..\src\ContentCollectionType.h" />
+    <ClInclude Include="..\src\ImageLocatorType.h" />
+    <ClInclude Include="..\src\InlineMediaType.h" />
+    <ClInclude Include="..\src\ReferenceType.h" />
+    <ClInclude Include="..\src\TitleMediaType.h" />
+    <ClInclude Include="..\src\Affiliation_anonymousType.h" />
+    <ClInclude Include="..\src\AgentType.h" />
+    <ClInclude Include="..\src\Base64Binary.h" />
+    <ClInclude Include="..\src\BIMXMLUtil.h" />
+    <ClInclude Include="..\src\BitstreamReader.h" />
+    <ClInclude Include="..\src\BitstreamWriter.h" />
+    <ClInclude Include="..\src\CollectionBim.h" />
+    <ClInclude Include="..\src\ControlledTermUseType.h" />
+    <ClInclude Include="..\src\CreationCoord_anonymusType.h" />
+    <ClInclude Include="..\src\CreatorType.h" />
+    <ClInclude Include="..\src\DescAnyUri.h" />
+    <ClInclude Include="..\src\DescAnyUri_typecast.h" />
+    <ClInclude Include="..\src\DescriptionMetadataType.h" />
+    <ClInclude Include="..\src\DescriptionProfileType.h" />
+    <ClInclude Include="..\src\DescString.h" />
+    <ClInclude Include="..\src\DescString_typecast.h" />
+    <ClInclude Include="..\src\ElectronicAddressType.h" />
+    <ClInclude Include="..\src\GeographicPointType.h" />
+    <ClInclude Include="..\src\GeographicPosition_anonymousType.h" />
+    <ClInclude Include="..\src\HexBinary.h" />
+    <ClInclude Include="..\src\InlineTermDefinitionType.h" />
+    <ClInclude Include="..\src\MediaAgentType_content.h" />
+    <ClInclude Include="..\src\MPEG7IntegerVector.h" />
+    <ClInclude Include="..\src\Mpeg7Type_content.h" />
+    <ClInclude Include="..\src\OrganizationType.h" />
+    <ClInclude Include="..\src\PersonNameType.h" />
+    <ClInclude Include="..\src\PersonType.h" />
+    <ClInclude Include="..\src\PlaceType.h" />
+    <ClInclude Include="..\src\PostalAddress_anonymousType.h" />
+    <ClInclude Include="..\src\PPMpeg7Desc.h" />
+    <ClInclude Include="..\src\ProfileAndLevelIndication.h" />
+    <ClInclude Include="..\src\TermReferenceType.h" />
+    <ClInclude Include="..\src\TextualType.h" />
+    <ClInclude Include="..\src\TimePointType.h" />
+    <ClInclude Include="..\src\TimeType.h" />
+    <ClInclude Include="..\src\UTFUtil.h" />
+    <ClInclude Include="..\src\Frame_anonymousType.h" />
+    <ClInclude Include="..\src\ImageType.h" />
+    <ClInclude Include="..\src\ItemCreationCoord_anonymusType.h" />
+    <ClInclude Include="..\src\ItemCreationInformationType.h" />
+    <ClInclude Include="..\src\ItemCreationType.h" />
+    <ClInclude Include="..\src\ItemMpeg7.h" />
+    <ClInclude Include="..\src\ItemTimeType.h" />
+    <ClInclude Include="..\src\MediaFormatType.h" />
+    <ClInclude Include="..\src\MediaInformationType.h" />
+    <ClInclude Include="..\src\MediaInstanceType.h" />
+    <ClInclude Include="..\src\MediaLocatorType.h" />
+    <ClInclude Include="..\src\MediaProfileType.h" />
+    <ClInclude Include="..\src\NonNegativeInteger.h" />
+    <ClInclude Include="..\src\NonNegativeInteger_typecast.h" />
+    <ClInclude Include="..\src\SegmentType_content.h" />
+    <ClInclude Include="..\src\StillRegionFeatureType.h" />
+    <ClInclude Include="..\src\StillRegionType.h" />
+    <ClInclude Include="..\src\UniqueIDType.h" />
+    <ClInclude Include="..\src\VisualCoding_anonymousType.h" />
+    <ClInclude Include="..\src\ColorLayoutType.h" />
+    <ClInclude Include="..\src\ColorStructureType.h" />
+    <ClInclude Include="..\src\CSValues_anonymousType.h" />
+    <ClInclude Include="..\src\DominantColorType.h" />
+    <ClInclude Include="..\src\DominantColorValueType.h" />
+    <ClInclude Include="..\src\EdgeHistogramType.h" />
+    <ClInclude Include="..\src\HomogeneousTextureType.h" />
+    <ClInclude Include="..\src\ScalableColorType.h" />
+    <ClInclude Include="..\src\ValueListType.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

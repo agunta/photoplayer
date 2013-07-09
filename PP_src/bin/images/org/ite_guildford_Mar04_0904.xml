@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mpeg7 xmlns="urn:mpeg:maf:schema:photoplayer:item:2006"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:mpeg:maf:schema:photoplayer:item:2006 ppmaf_item_schema_Oct06.xsd">
+  <DescriptionMetadata>
+    <LastUpdate>2006-12-29T19:36:20+00:00</LastUpdate>
+    <Creator>
+      <Role href="creatorCS">
+        <Name>Actor</Name>
+      </Role>
+      <Agent xsi:type="PersonType">
+        <Name>
+          <GivenName>John</GivenName>
+          <FamilyName>Smith</FamilyName>
+        </Name>
+      </Agent>
+    </Creator>
+  </DescriptionMetadata>
+  <DescriptionUnit xsi:type="ImageType">
+    <Image>
+      <MediaInformation>
+        <MediaProfile>
+          <MediaFormat>
+            <Content href="urn:mpeg:mpeg7:cs:ContentCS:2001">
+              <Name>Image</Name>
+            </Content>
+            <FileSize>152204</FileSize>
+            <VisualCoding>
+              <Frame height="600" width="800"/>
+            </VisualCoding>
+          </MediaFormat>
+        </MediaProfile>
+      </MediaInformation>
+      <CreationInformation>
+        <Creation>
+          <Title>Guildford</Title>
+        </Creation>
+      </CreationInformation>
+      <VisualDescriptionScheme xsi:type="StillRegionFeatureType">
+      </VisualDescriptionScheme>
+    </Image>
+  </DescriptionUnit>
+</Mpeg7>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Mpeg7 xmlns="urn:mpeg:maf:schema:photoplayer:collection:2006" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:mpeg:maf:schema:photoplayer:collection:2006 ppmaf_collection_schema_Oct06.xsd">
+    <DescriptionMetadata>
+        <LastUpdate>2005-09-03T09:20:25+09:00</LastUpdate>
+        <Creator>
+            <Role href="urn:mpeg:mpeg7:cs:RoleCS:2001:AUTHOR">
+                <Name>Author</Name>
+            </Role> 
+            <Agent xsi:type="PersonType">
+                <Name>
+                    <GivenName>Karol</GivenName>
+                    <FamilyName>Wnukowicz</FamilyName>
+                </Name>
+            </Agent>
+        </Creator>
+    </DescriptionMetadata>
+    <DescriptionUnit xsi:type="ContentCollectionType" name="Guildford">
+        <CreationInformation>
+            <Creation>
+                <Title>Guildford</Title>
+                <TitleMedia>
+                    <TitleImage> <!-- Thumbnail image (InlineMedia) --> </TitleImage>
+                </TitleMedia>
+            </Creation>
+        </CreationInformation>
+        <TextAnnotation>
+            <FreeTextAnnotation>Some scenes of Guildford</FreeTextAnnotation>
+        </TextAnnotation>
+        <ContentRef href="#ffp(track_ID=1)"/>
+        <ContentRef href="#ffp(track_ID=2)"/>
+        <ContentRef href="#ffp(track_ID=3)"/>
+        <ContentRef href="#ffp(track_ID=4)"/>
+        <ContentRef href="#ffp(track_ID=5)"/>
+        <ContentRef href="#ffp(track_ID=6)"/>
+        <ContentCollection name="Waterside">
+            <CreationInformation>
+                <Creation>
+                    <Title>
+                    </Title>
+                    <CreationCoordinates>
+                        <Date>
+                            <TimePoint>2006-07-31T13:17+00:00</TimePoint>
+                            <Duration>PT1M</Duration>
+                        </Date>
+                    </CreationCoordinates>
+                </Creation>
+            </CreationInformation>
+            <TextAnnotation>
+                <KeywordAnnotation>
+                    <Keyword>CategoryCollection</Keyword>
+                    <Keyword>River</Keyword>
+                </KeywordAnnotation>
+                <FreeTextAnnotation>The River in Guildford</FreeTextAnnotation>
+            </TextAnnotation>
+            <ContentRef href="#ffp(track_ID=1)"/>
+            <ContentRef href="#ffp(track_ID=2)"/>
+        </ContentCollection>  
+        <ContentCollection name="Buildings">
+            <CreationInformation>
+                <Creation>
+                    <Title>
+                    </Title>
+                    <CreationCoordinates>
+                        <Date>
+                            <TimePoint>2006-05-30T12:16+00:00</TimePoint>
+                            <Duration>PT1M</Duration>
+                        </Date>
+                    </CreationCoordinates>
+                </Creation>
+            </CreationInformation>
+            <TextAnnotation>
+                <KeywordAnnotation>
+                    <Keyword>CategoryCollection</Keyword>
+                    <Keyword>Buildings</Keyword>
+                </KeywordAnnotation>
+                <FreeTextAnnotation>Buildings of Guildford</FreeTextAnnotation>
+            </TextAnnotation>
+            <ContentRef href="#ffp(track_ID=3)"/>
+            <ContentRef href="#ffp(track_ID=4)"/>
+        </ContentCollection>  
+        <ContentCollection name="Winter">
+            <CreationInformation>
+                <Creation>
+                    <Title>
+                    </Title>
+                    <CreationCoordinates>
+                        <Date>
+                            <TimePoint>2006-05-30T12:19+00:00</TimePoint>
+                            <Duration>PT1M</Duration>
+                        </Date>
+                    </CreationCoordinates>
+                </Creation>
+            </CreationInformation>
+            <TextAnnotation>
+                <KeywordAnnotation>
+                    <Keyword>CategoryCollection</Keyword>
+                    <Keyword>Winter</Keyword>
+                </KeywordAnnotation>
+                <KeywordAnnotation>
+                    <Keyword>Snow</Keyword>
+                </KeywordAnnotation>
+                <FreeTextAnnotation>Snowy roads</FreeTextAnnotation>
+            </TextAnnotation>
+            <ContentRef href="#ffp(track_ID=5)"/>
+            <ContentRef href="#ffp(track_ID=6)"/>
+        </ContentCollection>  
+    </DescriptionUnit>
+</Mpeg7>
+    

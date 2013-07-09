@@ -1,0 +1,6 @@
+1;images\ite_guildford_Feb04_0116.jpg;metadata\ite_guildford_Feb04_0116.xml
+2;images\ite_guildford_Feb04_0119.jpg;metadata\ite_guildford_Feb04_0119.xml
+3;images\ite_guildford_Feb04_0146a.jpg;metadata\ite_guildford_Feb04_0146a.xml
+4;images\ite_guildford_Feb04_0162.jpg;metadata\ite_guildford_Feb04_0162.xml
+5;images\ite_guildford_Mar04_0904.jpg;metadata\ite_guildford_Mar04_0904.xml
+6;images\ite_guildford_Mar04_0907.jpg;metadata\ite_guildford_Mar04_0907.xml

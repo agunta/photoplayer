@@ -1,0 +1,593 @@
+<!-- ################################################################################ -->
+<!--                                          ISO/IEC 23000-3                                               -->
+<!--                    Photo Player Multimedia Application Format                     -->
+<!--        PPMAF Schema (derived from MPEG-7 Version 2 Schema)     -->
+<!--                                           Collection-level                                                -->
+<!--        Robert O'Callaghan Mitsubishi Electric ITE VI-Lab May 2006    -->
+<!-- ################################################################################ -->
+<schema targetNamespace="urn:mpeg:maf:schema:photoplayer:collection:2006" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mpeg7="urn:mpeg:maf:schema:photoplayer:collection:2006">
+    <!-- ########################################################### -->
+    <!--  import xml components                                      -->
+    <!-- ########################################################### -->
+    <!--<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd" />-->
+    <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd" />
+    <!-- ####################################### -->
+    <!--  Definition of MPEG-7 Base types (4.2)  -->
+    <!-- ####################################### -->
+    <!-- Definition of MPEG-7 base type -->
+    <complexType name="Mpeg7BaseType" abstract="true">
+        <complexContent>
+            <restriction base="anyType" />
+        </complexContent>
+    </complexType>
+    <!-- Definition of generic DS -->
+    <complexType name="DSType" abstract="true">
+        <complexContent>
+            <extension base="mpeg7:Mpeg7BaseType">
+<!--                <sequence>
+                    <element name="Header" type="mpeg7:HeaderType" minOccurs="0" maxOccurs="1" />
+                </sequence>-->
+                <attribute name="id" type="ID" use="optional" />
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- Definition of Header datatype -->
+    <complexType name="HeaderType" abstract="true">
+        <complexContent>
+            <extension base="mpeg7:Mpeg7BaseType">
+                <attribute name="id" type="ID" use="optional" />
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- Definition of Creator datatype -->
+    <complexType name="CreatorType">
+        <complexContent>
+            <extension base="mpeg7:MediaAgentType">
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- Definition of MediaAgent datatype  -->
+    <complexType name="MediaAgentType">
+        <sequence>
+            <element name="Role" type="mpeg7:ControlledTermUseType" />
+            <element name="Agent" type="mpeg7:AgentType" />   
+        </sequence>
+    </complexType>
+    
+    <!-- ################################################ -->
+    <!--  Definition of MPEG-7 root element (4.3) (COR/1) -->
+    <!-- ################################################ -->
+    <!-- Definition of Mpeg7 Type (COR/1)-->
+    <complexType name="Mpeg7Type" abstract="true">
+        <sequence>
+            <element name="DescriptionProfile" type="mpeg7:DescriptionProfileType" minOccurs="0" />
+            <element name="DescriptionMetadata" type="mpeg7:DescriptionMetadataType" minOccurs="1" />
+        </sequence>
+        <attribute ref="xml:lang" use="optional" />
+    </complexType>
+    <!-- Definition of DescriptionProfileType (COR/1) -->
+    <complexType name="DescriptionProfileType">
+        <attribute name="profileAndLevelIndication" use="required">
+            <simpleType>
+                <list itemType="anyURI" />
+            </simpleType>
+        </attribute>
+    </complexType>
+    <!-- Definition of Mpeg7 Element (COR/1) -->
+    <element name="Mpeg7">
+        <complexType>
+            <complexContent>
+                <extension base="mpeg7:Mpeg7Type">
+                    <sequence>
+                        <element name="DescriptionUnit" type="mpeg7:ContentCollectionType" /> 
+                        <!-- NB: for compatibility with MPEG-7 schema, xml instance documents shall 
+                            explicitly declare the DescriptionUnit with xsi:type="ContentCollectionType".  
+                            This is not necessary for validity against the current schema but its omission
+                            would prevent validation against MPEG-7 schema. -->
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+    </element>
+    <!-- ################################################## -->
+    <!--  Definition of DescriptionMetadata Header (4.5.3)  -->
+    <!-- ################################################## -->
+    <!-- Definition of DescriptionMetadata Header -->
+    <complexType name="DescriptionMetadataType">
+        <complexContent>
+            <extension base="mpeg7:HeaderType">
+                <sequence>
+                    <element name="LastUpdate" type="mpeg7:timePointType" minOccurs="1" />
+                    <element name="Creator" type="mpeg7:CreatorType" minOccurs="0" maxOccurs="unbounded" />
+                    <element name="CreationTime" type="mpeg7:timePointType" minOccurs="0" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ################################################## -->
+    <!--  Definition of mimeType datatype (5.6.2)  -->
+    <!-- ################################################## -->
+    <simpleType name="mimeType">
+        <restriction base="string">
+            <whiteSpace value="collapse" />
+            <pattern value='[&#x21;-&#x7f;-[\(\)&lt;&gt;@,;:\\"/\[\]\?=]]+/[&#x21;-&#x7f;-[\(\)&lt;&gt;@,;:\\"/\[\]\?=]]+' />
+        </restriction>
+    </simpleType>
+    <!-- ############################################ -->
+    <!--   Definition of Reference datatypes (6.2.1)  -->
+    <!-- ############################################ -->
+    <!-- Definition of referenceGrp attribute group -->
+    <attributeGroup name="referenceGrp">
+        <attribute name="href" type="anyURI" use="optional" />
+    </attributeGroup>
+    <!-- Definition of Reference datatype -->
+    <complexType name="ReferenceType">
+        <attributeGroup ref="mpeg7:referenceGrp" />
+    </complexType>
+
+    <!-- ##################################### -->
+    <!--  Definition of Time datatype (6.4.2)  -->
+    <!-- ##################################### -->
+    <!-- Definition of Time datatype -->
+    <complexType name="TimeType">
+        <sequence>
+            <element name="TimePoint" type="mpeg7:timePointType" />
+            <element name="Duration" type="mpeg7:durationType" minOccurs="0" />
+        </sequence>
+    </complexType>
+    <!-- ########################################## -->
+    <!--  Definition of timePoint datatype (6.4.3)  -->
+    <!-- ########################################## -->
+    <!-- Definition of timePoint datatype -->
+    <simpleType name="timePointType">
+        <restriction base="mpeg7:basicTimePointType">
+            <pattern value="(\-?\d+(\-\d{2}(\-\d{2})?)?)?(T\d{2}(:\d{2}(:\d{2}(:\d+)?)?)?)?(F\d+)?((\-|\+)\d{2}:\d{2})?" />
+        </restriction>
+    </simpleType>
+    <!-- definition of basicTimePoint dataype -->
+    <simpleType name="basicTimePointType">
+        <restriction base="string">
+            <pattern value="\-?(\d+(\-\d{2}(\-\d{2})?)?)?(T\d{2}(:\d{2}(:\d{2}(:\d+(\.\d{2})?)?)?)?)?(F\d+)?((\-|\+)\d{2}:\d{2})?" />
+        </restriction>
+    </simpleType>
+    <!-- ######################################### -->
+    <!--  Definition of duration datatype (6.4.4)  -->
+    <!-- ######################################### -->
+    <!-- Definition of duration datatype -->
+    <simpleType name="durationType">
+        <restriction base="mpeg7:basicDurationType">
+            <pattern value="\-?P(\d+D)?(T(\d+H)?(\d+M)?(\d+S)?(\d+N)?)?(\d+F)?((\-|\+)\d{2}:\d{2}Z)?" />
+        </restriction>
+    </simpleType>
+    <!-- definition of basicDuration dataype -->
+    <simpleType name="basicDurationType">
+        <restriction base="string">
+            <pattern value="\-?P(\d+D)?(T(\d+H)?(\d+M)?(\d+S)?(\d+N)?(\d{2}f)?)?(\d+F)?((\-|\+)\d{2}:\d{2}Z)?" />
+        </restriction>
+    </simpleType>
+    <!-- ############################################# -->
+    <!--  Definition of MediaLocator datatype (6.5.2)  -->
+    <!-- ############################################# -->
+    <!-- Definition of MediaLocator datatype -->
+    <complexType name="MediaLocatorType">
+        <sequence>
+                <element name="InlineMedia" type="mpeg7:InlineMediaType" minOccurs="0" />
+        </sequence>
+    </complexType>
+    <!-- ############################################ -->
+    <!--  Definition of InlineMedia datatype (6.5.3)  -->
+    <!-- ############################################ -->
+    <!-- Definition of InlineMedia datatype -->
+    <complexType name="InlineMediaType">
+        <choice>
+            <element name="MediaData16" type="hexBinary" />
+            <element name="MediaData64" type="base64Binary" />
+        </choice>
+        <attribute name="type" type="mpeg7:mimeType" use="required" />
+    </complexType>
+    <!-- ############################################# -->
+    <!--  Definition of ImageLocator datatype (6.5.5)  -->
+    <!-- ############################################# -->
+    <!-- Definition of ImageLocator datatype -->
+    <complexType name="ImageLocatorType">
+        <complexContent>
+            <extension base="mpeg7:MediaLocatorType">
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ######################################### -->
+    <!--  Definition of Textual datatypes (7.3.2)  -->
+    <!-- ######################################### -->
+    <!-- Definition of TextualBase datatype -->
+    <complexType name="TextualBaseType" abstract="true">
+        <simpleContent>
+            <extension base="string">
+                <attribute ref="xml:lang" use="optional" />
+            </extension>
+        </simpleContent>
+    </complexType>
+    <!-- Definition of Textual datatype -->
+    <complexType name="TextualType">
+        <simpleContent>
+            <extension base="mpeg7:TextualBaseType" />
+        </simpleContent>
+    </complexType>
+    <!-- ###############################################  -->
+    <!--  Definition of TextAnnotation datatype (7.3.3)   -->
+    <!-- ###############################################  -->
+    <!-- Definition of TextAnnotation datatype -->
+    <complexType name="TextAnnotationType">
+        <choice maxOccurs="unbounded">
+            <element name="FreeTextAnnotation" type="mpeg7:TextualType" />
+            <element name="KeywordAnnotation" type="mpeg7:KeywordAnnotationType" />
+        </choice>
+        <attribute ref="xml:lang" />
+    </complexType>
+    <!-- ################################################## -->
+    <!--  Definition of KeywordAnnotation datatype (7.3.5)  -->
+    <!-- ################################################## -->
+    <!-- Definition of KeywordAnnotation datatype -->
+    <complexType name="KeywordAnnotationType">
+        <sequence>
+            <element name="Keyword" maxOccurs="unbounded">
+                <complexType>
+                    <simpleContent>
+                        <extension base="mpeg7:TextualType">
+                            <attribute name="type" use="optional" default="main">
+                                <simpleType>
+                                    <restriction base="NMTOKEN">
+                                        <enumeration value="main" />
+                                        <enumeration value="secondary" />
+                                        <enumeration value="other" />
+                                    </restriction>
+                                </simpleType>
+                            </attribute>
+                        </extension>
+                    </simpleContent>
+                </complexType>
+            </element>
+        </sequence>
+        <attribute ref="xml:lang" use="optional" />
+    </complexType>
+    <!-- ######################################## -->
+    <!--  Definition of TermUse datatype (7.4.4)  -->
+    <!-- ######################################## -->
+    <!-- Definition of I<complexType name="KeywordAnnotationType">
+        <sequence>
+            <element name="Keyword" maxOccurs="unbounded">
+                <complexType>
+                    <simpleContent>
+                        <extension base="mpeg7:TextualType">
+                            <attribute name="type" use="optional" default="main">
+                                <simpleType>
+                                    <restriction base="NMTOKEN">
+                                        <enumeration value="main" />
+                                        <enumeration value="secondary" />
+                                        <enumeration value="other" />
+                                    </restriction>
+                                </simpleType>
+                            </attribute>
+                        </extension>
+                    </simpleContent>
+                </complexType>
+            </element>
+        </sequence>
+        <attribute ref="xml:lang" use="optional" />
+    </complexType>-->
+    <!-- InlineTermDefinition datatype  -->
+    <complexType name="InlineTermDefinitionType" abstract="true">
+        <sequence>
+            <element name="Name" minOccurs="0">
+                <complexType>
+                    <simpleContent>
+                        <extension base="mpeg7:TextualType"/>
+                    </simpleContent>
+                </complexType>
+            </element>
+        </sequence>
+    </complexType>
+    <!-- ################################################## -->
+    <!--  Definition of ControlledTermUse datatype (7.4.5)  -->
+    <!-- ################################################## -->
+    <!-- Definition of ControlledTermUse datatype  -->
+    <complexType name="ControlledTermUseType">
+        <complexContent>
+            <extension base="mpeg7:InlineTermDefinitionType">
+                <attribute name="href" type="mpeg7:termReferenceType" use="required" />
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ################################################## -->
+    <!--  Definition of termReferenceType datatype (7.4.6)  -->
+    <!-- ################################################## -->
+    <!-- Definition of termReference datatype  -->
+    <simpleType name="termReferenceType">
+        <union memberTypes="mpeg7:termAliasReferenceType mpeg7:termURIReferenceType" />
+    </simpleType>
+    <simpleType name="termAliasReferenceType">
+        <restriction base="NMTOKEN">
+            <whiteSpace value="collapse" />
+            <pattern value=":[^:]+:[^:]+" />
+        </restriction>
+    </simpleType>
+    <simpleType name="termURIReferenceType">
+        <restriction base="anyURI" />
+    </simpleType>
+    <!-- ################################ -->
+    <!--  Definition of Agent DS (7.5.2)  -->
+    <!-- ################################ -->
+    <!-- Definition of Agent DS  -->
+    <complexType name="AgentType" abstract="true">
+        <complexContent>
+            <extension base="mpeg7:DSType">
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ######################################### -->
+    <!--  Definition of Person DS (7.5.3) (AMD/2)  -->
+    <!-- ######################################### -->
+    <!-- Definition of Person DS  (AMD/2) -->
+    <complexType name="PersonType">
+        <complexContent>
+            <extension base="mpeg7:AgentType">
+                <sequence>
+                    <element name="Name" type="mpeg7:PersonNameType" />
+                    <element name="Affiliation" minOccurs="0" maxOccurs="unbounded">
+                        <complexType>
+                            <sequence>
+                                <element name="Organization" type="mpeg7:OrganizationType" />
+                            </sequence>
+                        </complexType>
+                    </element>
+                    <element name="Address" type="mpeg7:PlaceType" minOccurs="0" />
+                    <element name="ElectronicAddress" type="mpeg7:ElectronicAddressType" minOccurs="0" maxOccurs="unbounded" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ####################################### -->
+    <!--  Definition of Organization DS (7.5.5)  -->
+    <!-- ####################################### -->
+    <!-- Definition of Organization DS  -->
+    <complexType name="OrganizationType">
+        <complexContent>
+            <extension base="mpeg7:AgentType">
+                <sequence>
+                    <element name="Name" minOccurs="0" maxOccurs="unbounded">
+                        <complexType>
+                            <simpleContent>
+                                <extension base="mpeg7:TextualType">
+                                    <!--<attribute name="type" use="optional">
+                                        <simpleType>
+                                        <restriction base="NMTOKEN">
+                                        <enumeration value="former" />
+                                        <enumeration value="variant" />
+                                        <enumeration value="main" />
+                                        </restriction>
+                                        </simpleType>
+                                        </attribute>-->
+                                </extension>
+                            </simpleContent>
+                        </complexType>
+                    </element>
+                    <!--                    <element name="NameTerm" minOccurs="0" maxOccurs="unbounded">
+                        <complexType>
+                        <complexContent>
+                        <extension base="mpeg7:ControlledTermUseType">
+                        <attribute name="type" use="optional">
+                        <simpleType>
+                        <restriction base="NMTOKEN">
+                        <enumeration value="former" />
+                        <enumeration value="variant" />
+                        <enumeration value="main" />
+                        </restriction>
+                        </simpleType>
+                        </attribute>
+                        </extension>
+                        </complexContent>
+                        </complexType>
+                        </element>-->
+                    <!--<element name="Kind" type="mpeg7:TermUseType" minOccurs="0" />-->
+    <!--                <choice minOccurs="0" maxOccurs="unbounded">
+                        <element name="Contact" type="mpeg7:AgentType" />
+                        <element name="ContactRef" type="mpeg7:ReferenceType" />
+                    </choice>-->
+                    <!--                    <choice minOccurs="0">
+                        <element name="Jurisdiction" type="mpeg7:PlaceType" />
+                        <element name="JurisdictionRef" type="mpeg7:ReferenceType" />
+                        </choice>-->
+                  <!--  <choice minOccurs="0">-->
+                    <element name="Address" type="mpeg7:PlaceType" minOccurs="0" />
+                       <!-- <element name="AddressRef" type="mpeg7:ReferenceType" />-->
+                    <!--</choice>-->
+                    <element name="ElectronicAddress" type="mpeg7:ElectronicAddressType" minOccurs="0" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ################################################### -->
+    <!--  Definition of PersonName datatype (7.5.6) (AMD/2)  -->
+    <!-- ################################################### -->
+    <!-- Definition of PersonName datatype (AMD/2)-->
+    <complexType name="PersonNameType">
+        <sequence>
+            <choice maxOccurs="unbounded">
+                <element name="GivenName" type="mpeg7:NameComponentType" />
+                <element name="LinkingName" type="mpeg7:NameComponentType" minOccurs="0" />
+                <element name="FamilyName" type="mpeg7:NameComponentType" minOccurs="0" />
+                <element name="Title" type="mpeg7:NameComponentType" minOccurs="0" />
+                <element name="Salutation" type="mpeg7:NameComponentType" minOccurs="0" />
+                <element name="Numeration" type="string" minOccurs="0" />
+            </choice>
+        </sequence>
+        <attribute ref="xml:lang" use="optional" />
+    </complexType>
+    <!-- Definition of NameComponent datatype -->
+    <complexType name="NameComponentType">
+        <simpleContent>
+            <extension base="mpeg7:TextualBaseType">
+            </extension>
+        </simpleContent>
+    </complexType>
+    <!-- ######################################################### -->
+    <!--  Definition of ElectronicAddress datatype (7.5.7)(AMD/2)  -->
+    <!-- ######################################################### -->
+    <!-- Definition of ElectronicAddress datatype (AMD/2) -->
+    <complexType name="ElectronicAddressType">
+        <sequence>
+            <element name="Telephone" minOccurs="0" maxOccurs="unbounded">
+                <complexType>
+                    <simpleContent>
+                        <extension base="string">
+                            <!-- <attribute name="type" use="optional">
+                                <simpleType>
+                                <restriction base="string">
+                                <enumeration value="central" />
+                                <enumeration value="secondary" />
+                                </restriction>
+                                </simpleType>
+                                </attribute>-->
+                        </extension>
+                    </simpleContent>
+                </complexType>
+            </element>
+            <element name="Fax" type="string" minOccurs="0" maxOccurs="unbounded" />
+            <element name="Email" type="string" minOccurs="0" maxOccurs="unbounded" />
+            <element name="Url" type="anyURI" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    <!-- ######################################## -->
+    <!--  Definition of Place DS (7.6.2) (AMD/2)  -->
+    <!-- ######################################## -->
+    <!-- Definition of Place DS (AMD/2)  -->
+    <complexType name="PlaceType">
+        <complexContent>
+            <extension base="mpeg7:DSType">
+                <sequence>
+                    <element name="Name" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded" />
+                    <element name="PlaceDescription" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded" />
+                    <element name="GeographicPosition" minOccurs="0">
+                        <complexType>
+                            <sequence>
+                                <element name="Point" type="mpeg7:GeographicPointType" />
+                            </sequence>
+                            <attribute name="datum" type="string" use="optional" />
+                        </complexType>
+                    </element>
+                    <element name="PostalAddress" minOccurs="0">
+                        <complexType>
+                            <sequence>
+                                <element name="AddressLine" type="mpeg7:TextualType" maxOccurs="unbounded" />
+                                <element name="PostingIdentifier" type="mpeg7:TextualType" minOccurs="0" />
+                            </sequence>
+                            <attribute ref="xml:lang" use="optional" />
+                        </complexType>
+                    </element>
+                </sequence>
+                <!--<attribute ref="xml:lang" use="optional" />-->
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ################################################ -->
+    <!--  Definition of GeographicPoint datatype (7.6.3)  -->
+    <!-- ################################################ -->
+    <!-- Definition of GeographicPoint datatype -->
+    <complexType name="GeographicPointType">
+        <attribute name="longitude" use="required">
+            <simpleType>
+                <restriction base="double">
+                    <minInclusive value="-180.0" />
+                    <maxInclusive value="180.0" />
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="latitude" use="required">
+            <simpleType>
+                <restriction base="double">
+                    <minInclusive value="-90.0" />
+                    <maxInclusive value="90.0" />
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="altitude" type="double" use="optional" />
+    </complexType>
+    <!-- ############################################## -->
+    <!--  Definition of CreationInformation DS (9.2.1)  -->
+    <!-- ############################################## -->
+    <!-- Definition of CreationInformation DS  -->
+    <complexType name="CreationInformationType">
+        <complexContent>
+            <extension base="mpeg7:DSType">
+                <sequence>
+                    <element name="Creation" type="mpeg7:CreationType" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ################################### -->
+    <!--  Definition of Creation DS (9.2.2)  -->
+    <!-- ################################### -->
+    <!-- Definition of Creation DS  -->
+    <complexType name="CreationType">
+        <complexContent>
+            <extension base="mpeg7:DSType">
+                <sequence>
+                    <element name="Title" type="mpeg7:TitleType" maxOccurs="unbounded" />
+                    <element name="TitleMedia" type="mpeg7:TitleMediaType" minOccurs="0" />
+                    <element name="Creator" type="mpeg7:CreatorType" minOccurs="0" maxOccurs="unbounded" />
+                    <element name="CreationCoordinates" minOccurs="0" maxOccurs="1">
+                        <complexType>
+                            <sequence>
+                                <element name="Location" type="mpeg7:PlaceType" minOccurs="0" />
+                                <element name="Date" type="mpeg7:TimeType" minOccurs="0" />
+                            </sequence>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- Definition of Title datatype  -->
+    <complexType name="TitleType">
+        <simpleContent>
+            <extension base="mpeg7:TextualBaseType">
+            </extension>
+        </simpleContent>
+    </complexType>
+    <!-- Definition of TitleMedia datatype -->
+    <complexType name="TitleMediaType">
+        <sequence>
+            <element name="TitleImage" type="mpeg7:ImageLocatorType" minOccurs="0" />
+        </sequence>
+    </complexType>
+    <!-- ###################################### -->
+    <!--  Definition of Collection DS (14.2.1)  -->
+    <!-- ###################################### -->
+    <!-- Definition of Collection DS -->
+    <complexType name="CollectionType" abstract="true">
+        <complexContent>
+            <extension base="mpeg7:DSType">
+                <sequence>
+                    <element name="CreationInformation" type="mpeg7:CreationInformationType" minOccurs="0" />
+                    <element name="TextAnnotation" type="mpeg7:TextAnnotationType" minOccurs="0" maxOccurs="unbounded" />
+                </sequence>
+                <attribute name="name" type="string" use="optional" />
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ##################################################### -->
+    <!--  Definition of ContentCollection DS (14.2.2) (AMD/2)  -->
+    <!-- ##################################################### -->
+    <!-- Definition of ContentCollection DS (AMD/2)-->
+    <complexType name="ContentCollectionType">
+        <complexContent>
+            <extension base="mpeg7:CollectionType">
+                <sequence>
+                    <element name="ContentRef" type="mpeg7:ReferenceType" minOccurs="0" maxOccurs="unbounded" />
+                    <element name="ContentCollection" type="mpeg7:ContentCollectionType" minOccurs="0" maxOccurs="unbounded" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+        
+</schema>    

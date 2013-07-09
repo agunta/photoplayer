@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Collection Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Collection Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header FIles">
+      <UniqueIdentifier>{e8e2f7b6-566e-4664-9dbe-2c5cd3ebbdf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles">
+      <UniqueIdentifier>{f0f6d286-02ea-4659-9fc6-a87d2dbb14da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item Source Files">
+      <UniqueIdentifier>{df2185bb-782b-456a-8e20-f757b1d0f8d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item Header Files">
+      <UniqueIdentifier>{370b0ac5-95b5-4b3a-ba1d-57671e6f446e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualContent Header Files">
+      <UniqueIdentifier>{5801cc5e-cf5f-47f7-9103-9cd9c9787350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualContent Source Files">
+      <UniqueIdentifier>{dcfe8711-f583-4784-8d4d-482db446e3ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ColCreationInformationType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColCreationType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColKeyword_anonymousType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColKeywordAnnotationType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CollectionType_attributes.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CollectionType_content.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColMpeg7.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColTextAnnotationType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ContentCollectionType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImageLocatorType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InlineMediaType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ReferenceType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TitleMediaType.cpp">
+      <Filter>Collection Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Affiliation_anonymousType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AgentType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Base64Binary.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BimXMLUtil.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BitstreamReader.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BitstreamWriter.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ControlledTermUseType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CreationCoord_anonymusType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CreatorType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DescAnyUri.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DescAnyUri_typecast.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DescriptionMetadataType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DescriptionProfileType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DescString.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DescString_typecast.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ElectronicAddressType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GeographicPointType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GeographicPosition_anonymusType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HexBinary.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InlineTermDefinitionType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MediaAgentType_content.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MPEG7IntegerVector.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Mpeg7Type_content.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OrganizationType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PersonNameType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PersonType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PlaceType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PostalAddress_anonymousType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ProfileAndLevelIndication.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TermReferenceType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TextualType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TimePointType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TimeType.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UTFUtil.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Frame_anonymousType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImageType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemCreationCoord_anonymusType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemCreationInformationType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemCreationType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemMpeg7.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemTimeType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MediaFormatType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MediaInformationType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MediaInstanceType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MediaLocatorType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MediaProfileType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NonNegativeInteger.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NonNegativeInteger_typecast.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SegmentType_content.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StillRegionFeatureType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StillRegionType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UniqueIDType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VisualCoding_anonymousType.cpp">
+      <Filter>Item Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColorLayoutType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ColorStructureType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CSValues_anonymousType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DominantColorType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DominantColorValueType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EdgeHistogramType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HomogeneousTextureType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScalableColorType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ValueListType.cpp">
+      <Filter>VisualContent Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\ColCreationInformationType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColCreationType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColKeyword_anonymousType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColKeywordAnnotationType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CollectionType_attributes.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CollectionType_content.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColMpeg7.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColTextAnnotationType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ContentCollectionType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ImageLocatorType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InlineMediaType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ReferenceType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TitleMediaType.h">
+      <Filter>Collection Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Affiliation_anonymousType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AgentType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Base64Binary.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BIMXMLUtil.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BitstreamReader.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BitstreamWriter.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CollectionBim.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ControlledTermUseType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CreationCoord_anonymusType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CreatorType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DescAnyUri.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DescAnyUri_typecast.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DescriptionMetadataType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DescriptionProfileType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DescString.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DescString_typecast.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ElectronicAddressType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GeographicPointType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GeographicPosition_anonymousType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HexBinary.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InlineTermDefinitionType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaAgentType_content.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MPEG7IntegerVector.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Mpeg7Type_content.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\OrganizationType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PersonNameType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PersonType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PlaceType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PostalAddress_anonymousType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PPMpeg7Desc.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ProfileAndLevelIndication.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TermReferenceType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextualType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TimePointType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TimeType.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UTFUtil.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Frame_anonymousType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ImageType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ItemCreationCoord_anonymusType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ItemCreationInformationType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ItemCreationType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ItemMpeg7.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ItemTimeType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaFormatType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaInformationType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaInstanceType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaLocatorType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaProfileType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NonNegativeInteger.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NonNegativeInteger_typecast.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SegmentType_content.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StillRegionFeatureType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StillRegionType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UniqueIDType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VisualCoding_anonymousType.h">
+      <Filter>Item Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColorLayoutType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ColorStructureType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CSValues_anonymousType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DominantColorType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DominantColorValueType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EdgeHistogramType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HomogeneousTextureType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScalableColorType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ValueListType.h">
+      <Filter>VisualContent Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

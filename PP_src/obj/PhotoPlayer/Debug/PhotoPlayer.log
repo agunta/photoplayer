@@ -1,0 +1,13 @@
+﻿Build started 2013-06-23 13:18:42.
+     1>Project "C:\Users\Agatka\Desktop\photo\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "..\..\obj\PhotoPlayer\Debug\PPDataParser.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../libisomediafile/src /I../../libisomediafile/w32 /I../../jpeglib/include /I../../xercesc/include /I../../xmvisual/src/AddressLib /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"..\..\obj\PhotoPlayer\Debug\pp_dataparser.pch" /Fo"..\..\obj\PhotoPlayer\Debug\\" /Fd"..\..\obj\PhotoPlayer\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\ImageList.cpp ..\src\JPEGUtil.cpp ..\src\PhotoPlayer.cpp ..\src\pp_dataparser.cpp ..\src\PPDOMErrorHandler.cpp
+         PPDOMErrorHandler.cpp
+     1>C:\Users\Agatka\Desktop\photo\PP_src\PhotoPlayer\src\PPDOMErrorHandler.cpp : fatal error C1083: Cannot open compiler generated file: '..\..\obj\PhotoPlayer\Debug\PPDOMErrorHandler.obj': Permission denied
+     1>Done Building Project "C:\Users\Agatka\Desktop\photo\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.04

@@ -1,0 +1,39 @@
+//////////////////////////////////////////////////////////////////////
+// This software was developed by various contributors (for details, see
+// the respective copyright notices in the different parts of the source
+// code)
+// 
+// This software module is an implementation of a part of one or more
+// Photo-Player MAF tools as specified by ISO/IEC 23000-3. ISO/IEC gives
+// users of Photo-Player MAF free license to this software module or
+// modifications thereof for use in hardware or software products claiming
+// conformance to Photo-Player MAF. Those intending to use this software
+// module in hardware or software products are advised that its use may
+// infringe existing patents. The developers of this software module and 
+// their companies, the subsequent editors and their companies, and
+// ISO/IEC have no liability for use of this software module or
+// modifications thereof in an implementation.
+// 
+// Copyright is not released for non Photo-Player MAF conforming products.
+// The contributors retain full right to use contributed code for their
+// own purpose, assign or donate such code to a third party, and
+// to inhibit third parties from using such code for non Photo-Player MAF
+// conforming products.
+// 
+// To the fullest extent allowed by applicable law, this software program
+// is issued "as is". Any warranties, conditions or representations,
+// expressed or implied, statutory or otherwise, are hereby excluded. Such
+// exclusions shall include without limitation all implied warranties of
+// satisfactory quality or fitness for any particular purpose and non-
+// infringement of third party rights. In no event shall any user of this
+// software program have any claim of any nature whatsoever against any
+// of the contributors regarding this software. No warranties express or
+// implied are made by the contributors. All limitations and exclusions of
+// liability apply equally for the benefit of all contributors. The
+// contributors do not warrant that the software is error-free or that it
+// will operate without interruption.
+// 
+// This copyright notice must be included in all copies or derivative
+// works.
+// 
+// Copyright © 2007
