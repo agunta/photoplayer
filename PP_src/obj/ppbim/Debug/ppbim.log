@@ -1,5 +1,5 @@
-﻿Build started 2013-06-23 13:15:50.
-     1>Project "C:\Users\Agatka\Desktop\photo\PP_src\ppbim\win32\ppbim.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2013-07-11 12:42:31.
+     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\ppbim.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
          Creating "..\..\obj\ppbim\Debug\ppbim.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
@@ -162,12 +162,12 @@
          ..\..\obj\ppbim\Debug\HomogeneousTextureType.obj
          ..\..\obj\ppbim\Debug\ScalableColorType.obj
          ..\..\obj\ppbim\Debug\ValueListType.obj
-         ppbim.vcxproj -> C:\Users\Agatka\Desktop\photo\PP_src\ppbim\win32\..\..\lib\Debug\ppbim.lib
+         ppbim.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\..\..\lib\Debug\ppbim.lib
        FinalizeBuildStatus:
          Deleting file "..\..\obj\ppbim\Debug\ppbim.unsuccessfulbuild".
          Touching "..\..\obj\ppbim\Debug\ppbim.lastbuildstate".
-     1>Done Building Project "C:\Users\Agatka\Desktop\photo\PP_src\ppbim\win32\ppbim.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\ppbim.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:01:06.62
+Time Elapsed 00:02:05.61

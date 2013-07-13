@@ -1,13 +1,45 @@
-﻿Build started 2013-06-23 13:18:42.
-     1>Project "C:\Users\Agatka\Desktop\photo\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" on node 3 (build target(s)).
+﻿Build started 2013-07-11 12:44:37.
+     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "..\..\obj\PhotoPlayer\Debug\PPDataParser.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "..\..\obj\PhotoPlayer\Debug\PPDataParser.unsuccessfulbuild".
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../libisomediafile/src /I../../libisomediafile/w32 /I../../jpeglib/include /I../../xercesc/include /I../../xmvisual/src/AddressLib /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"..\..\obj\PhotoPlayer\Debug\pp_dataparser.pch" /Fo"..\..\obj\PhotoPlayer\Debug\\" /Fd"..\..\obj\PhotoPlayer\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\ImageList.cpp ..\src\JPEGUtil.cpp ..\src\PhotoPlayer.cpp ..\src\pp_dataparser.cpp ..\src\PPDOMErrorHandler.cpp
          PPDOMErrorHandler.cpp
-     1>C:\Users\Agatka\Desktop\photo\PP_src\PhotoPlayer\src\PPDOMErrorHandler.cpp : fatal error C1083: Cannot open compiler generated file: '..\..\obj\PhotoPlayer\Debug\PPDOMErrorHandler.obj': Permission denied
-     1>Done Building Project "C:\Users\Agatka\Desktop\photo\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" (build target(s)) -- FAILED.
+         pp_dataparser.cpp
+         PhotoPlayer.cpp
+         JPEGUtil.cpp
+         ImageList.cpp
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.embed.manifest.res" ..\..\obj\PhotoPlayer\Debug\pp_dataparser_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\out\PhotoPlayer\Debug\pp_dataparser.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\Debug /LIBPATH:..\..\xercesc\lib libisomedia.lib ppbim.lib "xerces-c_2.lib" jpeglib.lib xmvisual.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Agatka\Desktop\photoplayer\PP_src\out\PhotoPlayer\Debug\pp_dataparser.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\out\PhotoPlayer\Debug\pp_dataparser.lib" /MACHINE:X86 ..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.embed.manifest.res
+         ..\..\obj\PhotoPlayer\Debug\ImageList.obj
+         ..\..\obj\PhotoPlayer\Debug\JPEGUtil.obj
+         ..\..\obj\PhotoPlayer\Debug\PhotoPlayer.obj
+         ..\..\obj\PhotoPlayer\Debug\pp_dataparser.obj
+         ..\..\obj\PhotoPlayer\Debug\PPDOMErrorHandler.obj
+         C:\Users\Agatka\Desktop\photoplayer\PP_src\lib\Debug\jpeglib.lib
+         C:\Users\Agatka\Desktop\photoplayer\PP_src\lib\Debug\ppbim.lib
+         C:\Users\Agatka\Desktop\photoplayer\PP_src\lib\Debug\libisomedia.lib
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.embed.manifest" /manifest ..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.embed.manifest.res" ..\..\obj\PhotoPlayer\Debug\pp_dataparser_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\out\PhotoPlayer\Debug\pp_dataparser.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\Debug /LIBPATH:..\..\xercesc\lib libisomedia.lib ppbim.lib "xerces-c_2.lib" jpeglib.lib xmvisual.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Agatka\Desktop\photoplayer\PP_src\out\PhotoPlayer\Debug\pp_dataparser.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\out\PhotoPlayer\Debug\pp_dataparser.lib" /MACHINE:X86 ..\..\obj\PhotoPlayer\Debug\pp_dataparser.exe.embed.manifest.res
+         ..\..\obj\PhotoPlayer\Debug\ImageList.obj
+         ..\..\obj\PhotoPlayer\Debug\JPEGUtil.obj
+         ..\..\obj\PhotoPlayer\Debug\PhotoPlayer.obj
+         ..\..\obj\PhotoPlayer\Debug\pp_dataparser.obj
+         ..\..\obj\PhotoPlayer\Debug\PPDOMErrorHandler.obj
+         C:\Users\Agatka\Desktop\photoplayer\PP_src\lib\Debug\jpeglib.lib
+         C:\Users\Agatka\Desktop\photoplayer\PP_src\lib\Debug\ppbim.lib
+         C:\Users\Agatka\Desktop\photoplayer\PP_src\lib\Debug\libisomedia.lib
+         PhotoPlayer.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\..\..\out\PhotoPlayer\Debug\pp_dataparser.exe
+       FinalizeBuildStatus:
+         Deleting file "..\..\obj\PhotoPlayer\Debug\PPDataParser.unsuccessfulbuild".
+         Touching "..\..\obj\PhotoPlayer\Debug\PPDataParser.lastbuildstate".
+     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.04
+Time Elapsed 00:00:11.10
