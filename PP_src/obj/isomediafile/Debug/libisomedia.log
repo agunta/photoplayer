@@ -1,6 +1,8 @@
-﻿Build started 2013-07-11 12:42:21.
-     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\libisomediafile\w32\libisomediafile\libisomedia.vcxproj" on node 3 (build target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 2013-07-13 20:40:26.
+     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\libisomediafile\w32\libisomediafile\libisomedia.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "..\..\..\obj\isomediafile\Debug\libisomedia.lastbuildstate".
+       InitializeBuildStatus:
          Creating "..\..\..\obj\isomediafile\Debug\libisomedia.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\w32 /I..\..\src /ZI /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _WINDOWS /D ISOMP4DLLAPI /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0600 /D _WINDLL /Gm /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\..\obj\isomediafile\Debug\\" /Fd"..\..\..\obj\isomediafile\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\AudioSampleEntryAtom.c ..\..\src\BaseDescriptor.c ..\..\src\BinaryXMLAtom.c ..\..\src\ChunkLargeOffsetAtom.c ..\..\src\ChunkOffsetAtom.c ..\..\src\ClockReferenceMediaHeader.c ..\..\src\CopyrightAtom.c ..\..\src\DataEntryURLAtom.c ..\..\src\DataEntryURNAtom.c ..\..\src\DataInformationAtom.c ..\..\src\DataReferenceAtom.c ..\..\src\DecodingOffsetAtom.c ..\..\src\DegradationPriorityAtom.c ..\..\src\EditAtom.c ..\..\src\EditListAtom.c ..\..\src\ESDAtom.c ..\..\src\ESUpdateCommand.c ..\..\src\FileMappingDataHandler.c ..\..\src\FreeSpaceAtom.c ..\..\src\GenericSampleEntryAtom.c ..\..\src\HandlerAtom.c ..\..\src\HintMediaHeaderAtom.c ..\..\src\ISOMovieFile.c ..\..\src\MdatDataHandler.c ..\..\src\MediaAtom.c ..\..\src\MediaDataAtom.c ..\..\src\MediaHeaderAtom.c ..\..\src\MediaInformationAtom.c ..\..\src\MemoryFileMappingObject.c ..\..\src\MetadataAtom.c ..\..\src\MJ2BitsPerComponentAtom.c ..\..\src\MJ2ColorSpecificationAtom.c ..\..\src\MJ2FileTypeAtom.c ..\..\src\MJ2HeaderAtom.c ..\..\src\MJ2ImageHeaderAtom.c ..\..\src\MJ2MovieFile.c ..\..\src\MJ2Movies.c ..\..\src\MJ2SignatureAtom.c ..\..\src\MovieAtom.c ..\..\src\MovieHeaderAtom.c ..\..\src\MovieTracks.c ..\..\src\MP4Atoms.c ..\..\src\MP4Commands.c ..\..\src\MP4DataHandler.c ..\..\src\MP4DecoderConfigDescriptor.c ..\..\src\MP4DefaultCommand.c ..\..\src\MP4DefaultDescriptor.c ..\..\src\MP4Descriptors.c ..\..\src\MP4ES_ID_IncDescriptor.c ..\..\src\MP4ES_ID_RefDescriptor.c ..\..\src\MP4ESDescriptor.c ..\..\src\MP4FileMappingInputStream.c ..\..\src\MP4FileTypeAtom.c ..\..\src\MP4Handle.c ..\..\src\MP4InitialObjectDescriptor.c ..\..\src\MP4InputStream.c ..\..\src\MP4LinkedList.c ..\..\src\MP4Media.c ..\..\src\MP4MemoryInputStream.c ..\..\src\MP4Metadata.c ..\..\src\MP4MovieFile.c ..\..\src\MP4Movies.c ..\..\src\MP4ObjectDescriptor.c ..\..\src\MP4ODTrackReader.c ..\..\src\MP4OrdinaryTrackReader.c ..\..\src\MP4SLPacket.c ..\..\src\MP4TrackReader.c ..\..\src\MP4UserData.c ..\..\src\MPEGMediaHeaderAtom.c ..\..\src\MPEGSampleEntryAtom.c ..\..\src\MPPMAFMovieFile.c ..\..\src\MPPMAFMovies.c ..\..\src\ObjectDescriptorAtom.c ..\..\src\ObjectDescriptorMediaHeader.c ..\..\src\ODUpdateCommand.c ..\..\src\QTMovieFile.c ..\..\src\QTMovies.c ..\..\src\SampleDescriptionAtom.c ..\..\src\SampleSizeAtom.c ..\..\src\SampleTableAtom.c ..\..\src\SampleToChunkAtom.c ..\..\src\SceneDescriptionMediaHeader.c ..\..\src\ShadowSyncAtom.c ..\..\src\SLConfigDescriptor.c ..\..\src\SoundMediaHeaderAtom.c ..\..\src\SyncSampleAtom.c ..\..\src\TimeToSampleAtom.c ..\..\src\TrackAtom.c ..\..\src\TrackHeaderAtom.c ..\..\src\TrackReferenceAtom.c ..\..\src\TrackReferenceTypeAtom.c ..\..\src\UnknownAtom.c ..\..\src\UserDataAtom.c ..\..\src\VideoMediaHeaderAtom.c ..\..\src\VisualSampleEntryAtom.c ..\W32FileMappingObject.c
@@ -212,18 +214,116 @@
          ..\..\..\obj\isomediafile\Debug\W32FileMappingObject.obj
             Creating library ..\..\..\lib\Debug\libisomedia.lib and object ..\..\..\lib\Debug\libisomedia.exp
        Manifest:
+         Deleting file "..\..\..\obj\isomediafile\Debug\libisomedia.dll.embed.manifest".
          C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"..\..\..\obj\isomediafile\Debug\libisomedia.dll.embed.manifest" /manifest ..\..\..\obj\isomediafile\Debug\libisomedia.dll.intermediate.manifest
-         All outputs are up-to-date.
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"..\..\..\obj\isomediafile\Debug\libisomedia.dll.embed.manifest.res" ..\..\..\obj\isomediafile\Debug\libisomedia_manifest.rc 
        LinkEmbedManifest:
-         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\lib\Debug\libisomedia.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"..\..\..\obj\isomediafile\Debug\libisomedia.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"..\..\..\obj\isomediafile\Debug\libisomedia.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\lib\Debug\libisomedia.lib" /MACHINE:X86 /DLL ..\..\..\obj\isomediafile\Debug\libisomedia.dll.embed.manifest.res
+         ..\..\..\obj\isomediafile\Debug\AudioSampleEntryAtom.obj
+         ..\..\..\obj\isomediafile\Debug\BaseDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\BinaryXMLAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ChunkLargeOffsetAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ChunkOffsetAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ClockReferenceMediaHeader.obj
+         ..\..\..\obj\isomediafile\Debug\CopyrightAtom.obj
+         ..\..\..\obj\isomediafile\Debug\DataEntryURLAtom.obj
+         ..\..\..\obj\isomediafile\Debug\DataEntryURNAtom.obj
+         ..\..\..\obj\isomediafile\Debug\DataInformationAtom.obj
+         ..\..\..\obj\isomediafile\Debug\DataReferenceAtom.obj
+         ..\..\..\obj\isomediafile\Debug\DecodingOffsetAtom.obj
+         ..\..\..\obj\isomediafile\Debug\DegradationPriorityAtom.obj
+         ..\..\..\obj\isomediafile\Debug\EditAtom.obj
+         ..\..\..\obj\isomediafile\Debug\EditListAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ESDAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ESUpdateCommand.obj
+         ..\..\..\obj\isomediafile\Debug\FileMappingDataHandler.obj
+         ..\..\..\obj\isomediafile\Debug\FreeSpaceAtom.obj
+         ..\..\..\obj\isomediafile\Debug\GenericSampleEntryAtom.obj
+         ..\..\..\obj\isomediafile\Debug\HandlerAtom.obj
+         ..\..\..\obj\isomediafile\Debug\HintMediaHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ISOMovieFile.obj
+         ..\..\..\obj\isomediafile\Debug\MdatDataHandler.obj
+         ..\..\..\obj\isomediafile\Debug\MediaAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MediaDataAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MediaHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MediaInformationAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MemoryFileMappingObject.obj
+         ..\..\..\obj\isomediafile\Debug\MetadataAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2BitsPerComponentAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2ColorSpecificationAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2FileTypeAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2HeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2ImageHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2MovieFile.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2Movies.obj
+         ..\..\..\obj\isomediafile\Debug\MJ2SignatureAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MovieAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MovieHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MovieTracks.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Atoms.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Commands.obj
+         ..\..\..\obj\isomediafile\Debug\MP4DataHandler.obj
+         ..\..\..\obj\isomediafile\Debug\MP4DecoderConfigDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4DefaultCommand.obj
+         ..\..\..\obj\isomediafile\Debug\MP4DefaultDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Descriptors.obj
+         ..\..\..\obj\isomediafile\Debug\MP4ES_ID_IncDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4ES_ID_RefDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4ESDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4FileMappingInputStream.obj
+         ..\..\..\obj\isomediafile\Debug\MP4FileTypeAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Handle.obj
+         ..\..\..\obj\isomediafile\Debug\MP4InitialObjectDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4InputStream.obj
+         ..\..\..\obj\isomediafile\Debug\MP4LinkedList.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Media.obj
+         ..\..\..\obj\isomediafile\Debug\MP4MemoryInputStream.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Metadata.obj
+         ..\..\..\obj\isomediafile\Debug\MP4MovieFile.obj
+         ..\..\..\obj\isomediafile\Debug\MP4Movies.obj
+         ..\..\..\obj\isomediafile\Debug\MP4ObjectDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\MP4ODTrackReader.obj
+         ..\..\..\obj\isomediafile\Debug\MP4OrdinaryTrackReader.obj
+         ..\..\..\obj\isomediafile\Debug\MP4SLPacket.obj
+         ..\..\..\obj\isomediafile\Debug\MP4TrackReader.obj
+         ..\..\..\obj\isomediafile\Debug\MP4UserData.obj
+         ..\..\..\obj\isomediafile\Debug\MPEGMediaHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MPEGSampleEntryAtom.obj
+         ..\..\..\obj\isomediafile\Debug\MPPMAFMovieFile.obj
+         ..\..\..\obj\isomediafile\Debug\MPPMAFMovies.obj
+         ..\..\..\obj\isomediafile\Debug\ObjectDescriptorAtom.obj
+         ..\..\..\obj\isomediafile\Debug\ObjectDescriptorMediaHeader.obj
+         ..\..\..\obj\isomediafile\Debug\ODUpdateCommand.obj
+         ..\..\..\obj\isomediafile\Debug\QTMovieFile.obj
+         ..\..\..\obj\isomediafile\Debug\QTMovies.obj
+         ..\..\..\obj\isomediafile\Debug\SampleDescriptionAtom.obj
+         ..\..\..\obj\isomediafile\Debug\SampleSizeAtom.obj
+         ..\..\..\obj\isomediafile\Debug\SampleTableAtom.obj
+         ..\..\..\obj\isomediafile\Debug\SampleToChunkAtom.obj
+         ..\..\..\obj\isomediafile\Debug\SceneDescriptionMediaHeader.obj
+         ..\..\..\obj\isomediafile\Debug\ShadowSyncAtom.obj
+         ..\..\..\obj\isomediafile\Debug\SLConfigDescriptor.obj
+         ..\..\..\obj\isomediafile\Debug\SoundMediaHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\SyncSampleAtom.obj
+         ..\..\..\obj\isomediafile\Debug\TimeToSampleAtom.obj
+         ..\..\..\obj\isomediafile\Debug\TrackAtom.obj
+         ..\..\..\obj\isomediafile\Debug\TrackHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\TrackReferenceAtom.obj
+         ..\..\..\obj\isomediafile\Debug\TrackReferenceTypeAtom.obj
+         ..\..\..\obj\isomediafile\Debug\UnknownAtom.obj
+         ..\..\..\obj\isomediafile\Debug\UserDataAtom.obj
+         ..\..\..\obj\isomediafile\Debug\VideoMediaHeaderAtom.obj
+         ..\..\..\obj\isomediafile\Debug\VisualSampleEntryAtom.obj
+         ..\..\..\obj\isomediafile\Debug\W32FileMappingObject.obj
+            Creating library ..\..\..\lib\Debug\libisomedia.lib and object ..\..\..\lib\Debug\libisomedia.exp
          libisomedia.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\libisomediafile\w32\libisomediafile\..\..\..\lib\Debug\libisomedia.dll
        CopyFilesToOutputDirectory:
          Copying file from "..\..\..\obj\isomediafile\Debug\libisomedia.pdb" to "..\..\..\lib\Debug\libisomedia.pdb".
        FinalizeBuildStatus:
          Deleting file "..\..\..\obj\isomediafile\Debug\libisomedia.unsuccessfulbuild".
          Touching "..\..\..\obj\isomediafile\Debug\libisomedia.lastbuildstate".
-     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\libisomediafile\w32\libisomediafile\libisomedia.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\libisomediafile\w32\libisomediafile\libisomedia.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:02:11.10
+Time Elapsed 00:00:18.83

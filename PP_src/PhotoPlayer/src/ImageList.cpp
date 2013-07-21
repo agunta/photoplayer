@@ -47,7 +47,9 @@
 #include <fstream>
 
 //#include "../../ppbim/src/collectionbim.h"
-#include <xercesc/parsers/XercesDOMParser.hpp>
+
+//#include <xercesc/parsers/XercesDOMParser.hpp>
+#include "XercesDOMParser.hpp"
 #include <xercesc/util/OutOfMemoryException.hpp>
 #include "ppdomerrorhandler.h"
 

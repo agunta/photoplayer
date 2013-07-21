@@ -1,6 +1,8 @@
-﻿Build started 2013-07-11 12:42:21.
-     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\jpeglib.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 2013-07-13 20:40:45.
+     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\jpeglib.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "../../obj/jpeglib/Debug\jpeglib.lastbuildstate".
+       InitializeBuildStatus:
          Creating "../../obj/jpeglib/Debug\jpeglib.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../../obj/jpeglib/Debug\\" /Fd"../../obj/jpeglib/Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\jcapimin.c ..\jcapistd.c ..\jccoefct.c ..\jccolor.c ..\jcdctmgr.c ..\jchuff.c ..\jcinit.c ..\jcmainct.c ..\jcmarker.c ..\jcmaster.c ..\jcomapi.c ..\jcparam.c ..\jcphuff.c ..\jcprepct.c ..\jcsample.c ..\jctrans.c ..\jdapimin.c ..\jdapistd.c ..\jdatadst.c ..\jdatasrc.c ..\jdcoefct.c ..\jdcolor.c ..\jddctmgr.c ..\jdhuff.c ..\jdinput.c ..\jdmainct.c ..\jdmarker.c ..\jdmaster.c ..\jdmerge.c ..\jdphuff.c ..\jdpostct.c ..\jdsample.c ..\jdtrans.c ..\jerror.c ..\jfdctflt.c ..\jfdctfst.c ..\jfdctint.c ..\jidctflt.c ..\jidctfst.c ..\jidctint.c ..\jidctred.c ..\jmemmgr.c ..\jmemnobs.c ..\jquant1.c ..\jquant2.c ..\jutils.c
@@ -106,8 +108,8 @@
        FinalizeBuildStatus:
          Deleting file "../../obj/jpeglib/Debug\jpeglib.unsuccessfulbuild".
          Touching "../../obj/jpeglib/Debug\jpeglib.lastbuildstate".
-     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\jpeglib.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\jpeglib.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:09.70
+Time Elapsed 00:00:04.73

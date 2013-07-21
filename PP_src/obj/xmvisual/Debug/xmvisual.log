@@ -1,6 +1,8 @@
-﻿Build started 2013-06-23 13:15:46.
-     1>Project "C:\Users\Agatka\Desktop\photo\PP_src\xmvisual\win32\xmvisual.vcxproj" on node 3 (rebuild target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 2013-07-13 20:40:21.
+     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\xmvisual\win32\xmvisual.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "..\..\obj\xmvisual\Debug\xmvisual.lastbuildstate".
+       InitializeBuildStatus:
          Creating "..\..\obj\xmvisual\Debug\xmvisual.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../src/AddressLib /I../src /I../../jpeglib/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\obj\xmvisual\Debug\\" /Fd"..\..\obj\xmvisual\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\ExtractionUtilities\ColorLayoutExtraction.cpp ..\src\ExtractionUtilities\ColorSpaceExtraction.cpp ..\src\ExtractionUtilities\ColorStructureExtraction.cpp ..\src\ExtractionUtilities\DominantColorExtraction.cpp ..\src\ExtractionUtilities\EdgeHistExtraction.cpp ..\src\ExtractionUtilities\homo_texture_extractor.cpp ..\src\ExtractionUtilities\HomoTextureExtraction.cpp ..\src\ExtractionUtilities\ImageIO.cpp ..\src\ExtractionUtilities\ScalableColorExtraction.cpp
@@ -10,93 +12,93 @@
          homo_texture_extractor.cpp
          EdgeHistExtraction.cpp
          DominantColorExtraction.cpp
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(313): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(514): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(515): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(516): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(586): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(588): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(590): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(656): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(657): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(658): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(659): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(660): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(661): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(762): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(763): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(764): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(694): warning C4101: 'conversionmatrix' : unreferenced local variable
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(836): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1120): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1122): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1124): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1125): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1210): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1225): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1226): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1227): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1228): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1234): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1235): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1236): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1237): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1255): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1256): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1271): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1272): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1287): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1288): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1290): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1303): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(313): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(514): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(515): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(516): warning C4244: '/=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(586): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(588): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(590): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(656): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(657): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(658): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(659): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(660): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(661): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(762): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(763): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(764): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(694): warning C4101: 'conversionmatrix' : unreferenced local variable
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(836): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1120): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1122): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1124): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1125): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1210): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1225): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1226): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1227): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1228): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1234): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1235): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1236): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1237): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1255): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1256): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1271): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1272): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1287): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1288): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1290): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\dominantcolorextraction.cpp(1303): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
          ColorStructureExtraction.cpp
          ColorSpaceExtraction.cpp
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\colorspaceextraction.cpp(406): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\colorspaceextraction.cpp(410): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\colorspaceextraction.cpp(406): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\colorspaceextraction.cpp(410): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          ColorLayoutExtraction.cpp
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\extractionutilities\colorlayoutextraction.cpp(451): warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\extractionutilities\colorlayoutextraction.cpp(451): warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
          Generating Code...
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../src/AddressLib /I../src /I../../jpeglib/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\obj\xmvisual\Debug\\" /Fd"..\..\obj\xmvisual\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\AddressLib\address.c ..\src\AddressLib\fifo.c ..\src\AddressLib\inter.c ..\src\AddressLib\intra.c ..\src\AddressLib\lifo.c ..\src\AddressLib\nhood.c ..\src\AddressLib\vopio.c
          vopio.c
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\vopio.c(667): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\vopio.c(668): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\vopio.c(667): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\vopio.c(668): warning C4018: '>=' : signed/unsigned mismatch
          nhood.c
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\nhood.c(462): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\nhood.c(463): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\nhood.c(759): warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\nhood.c(762): warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\nhood.c(462): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\nhood.c(463): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\nhood.c(759): warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\nhood.c(762): warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
          lifo.c
          intra.c
          inter.c
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(1450): warning C4550: expression evaluates to a function which is missing an argument list
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(1450): warning C4550: expression evaluates to a function which is missing an argument list
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2060): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2068): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2082): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2083): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2084): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2085): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2086): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2151): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2159): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2172): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2173): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2174): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2175): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\inter.c(2176): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(1450): warning C4550: expression evaluates to a function which is missing an argument list
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(1450): warning C4550: expression evaluates to a function which is missing an argument list
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2060): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2068): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2082): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2083): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2084): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2085): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2086): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2151): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2159): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2172): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2173): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2174): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2175): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\inter.c(2176): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          fifo.c
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(431): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(434): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(767): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(770): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(981): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(984): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(1258): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(1261): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(1466): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(1469): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(1696): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
-     1>c:\users\agatka\desktop\photo\pp_src\xmvisual\src\addresslib\fifo.c(1699): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(431): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(434): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(767): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(770): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(981): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(984): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(1258): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(1261): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(1466): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(1469): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(1696): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
+     1>c:\users\agatka\desktop\photoplayer\pp_src\xmvisual\src\addresslib\fifo.c(1699): warning C4244: 'function' : conversion from 'short' to 'char', possible loss of data
          address.c
          Generating Code...
        Lib:
@@ -116,12 +118,12 @@
          ..\..\obj\xmvisual\Debug\lifo.obj
          ..\..\obj\xmvisual\Debug\nhood.obj
          ..\..\obj\xmvisual\Debug\vopio.obj
-         xmvisual.vcxproj -> C:\Users\Agatka\Desktop\photo\PP_src\xmvisual\win32\..\..\lib\Debug\xmvisual.lib
+         xmvisual.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\xmvisual\win32\..\..\lib\Debug\xmvisual.lib
        FinalizeBuildStatus:
          Deleting file "..\..\obj\xmvisual\Debug\xmvisual.unsuccessfulbuild".
          Touching "..\..\obj\xmvisual\Debug\xmvisual.lastbuildstate".
-     1>Done Building Project "C:\Users\Agatka\Desktop\photo\PP_src\xmvisual\win32\xmvisual.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\xmvisual\win32\xmvisual.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.05
+Time Elapsed 00:00:04.25

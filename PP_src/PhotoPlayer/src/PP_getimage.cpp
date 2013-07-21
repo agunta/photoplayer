@@ -60,29 +60,31 @@ int main(int argc, char* argv[])
 	PhotoPlayerMAF *pplayer = NULL;
 	ImageList *imgList = NULL;
 	ColMpeg7 *colmpeg = NULL;
-	char *inputFile = NULL;
+	//char *inputFile = NULL;
 	bool bRetrieveAll = true;
 	int iNumber = 0;
 
-	if(argc < 2)
-	{
-		printf("Missing input file. Usage:\n%s input_pp_movie.mp4 [image_number]\n", argv[0]);
-		//err = ISOFileNotFoundErr;
-		goto bail;
-	}
-	else
-	{
-		inputFile = argv[1];
-	}
-	if(argc > 2)
-	{
-		iNumber = atoi(argv[2]);
-		if(iNumber >=0)
-		{
-			bRetrieveAll = false;
-		}
+	//if(argc < 2)
+	//{
+	//	printf("Missing input file. Usage:\n%s input_pp_movie.mp4 [image_number]\n", argv[0]);
+	//	//err = ISOFileNotFoundErr;
+	//	goto bail;
+	//}
+	//else
+	//{
+	//	inputFile = argv[1];
+	//}
+	//if(argc > 2)
+	//{
+	//	iNumber = atoi(argv[2]);
+	//	if(iNumber >=0)
+	//	{
+	//		bRetrieveAll = false;
+	//	}
 
-	}
+	//}
+
+	
 
 	pplayer = new PhotoPlayerMAF();
 	err = pplayer->OpenMovie(inputFile); if (err) goto bail;

@@ -123,4 +123,130 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>&lt;MPEG7 XMLNS="URN:MPEG:MAF:SCHEMA:PHOTOPLAYER:ITEM:2006" XMLNS:XSI="HTTP://WWW.W3.ORG/2001/XMLSCHEMA-INSTANCE" XSI:SCHEMALOCATION="URN:MPEG:MAF:SCHEMA:PHOTOPLAYER:ITEM:2006 PPMAF_ITEM_SCHEMA.XSD"&gt;
+  &lt;DESCRIPTIONMETADATA&gt;
+    &lt;LASTUPDATE&gt;2006-07-31T14:17:00+00:00&lt;/LASTUPDATE&gt;
+    &lt;CREATOR&gt;
+      &lt;ROLE HREF="URN:MPEG:MPEG7:CS:ROLECS:2001:AUTHOR"&gt;
+          &lt;NAME&gt;AUTHOR&lt;/NAME&gt;
+      &lt;/ROLE&gt;
+      &lt;AGENT XSI:TYPE="PERSONTYPE"&gt;
+        &lt;NAME&gt;
+          &lt;GIVENNAME&gt;JOHN&lt;/GIVENNAME&gt;
+          &lt;FAMILYNAME&gt;SMITH&lt;/FAMILYNAME&gt;
+        &lt;/NAME&gt;
+      &lt;/AGENT&gt;
+    &lt;/CREATOR&gt;
+  &lt;/DESCRIPTIONMETADATA&gt;
+  &lt;DESCRIPTIONUNIT XSI:TYPE="IMAGETYPE"&gt;
+    &lt;IMAGE&gt;
+      &lt;MEDIAINFORMATION&gt;
+        &lt;MEDIAPROFILE&gt;
+          &lt;MEDIAFORMAT&gt;
+            &lt;CONTENT HREF="URN:MPEG:MPEG7:CS:CONTENTCS:2001:4.1"&gt;
+                &lt;NAME&gt;IMAGE&lt;/NAME&gt;
+            &lt;/CONTENT&gt;
+            &lt;FILESIZE&gt;25238&lt;/FILESIZE&gt;
+            &lt;VISUALCODING&gt;
+              &lt;FRAME HEIGHT="192" WIDTH="256"/&gt;
+            &lt;/VISUALCODING&gt;
+          &lt;/MEDIAFORMAT&gt;
+        &lt;/MEDIAPROFILE&gt;
+      &lt;/MEDIAINFORMATION&gt;
+      &lt;CREATIONINFORMATION&gt;
+        &lt;CREATION&gt;
+          &lt;TITLE&gt;GUILDFORD&lt;/TITLE&gt;
+        &lt;/CREATION&gt;
+      &lt;/CREATIONINFORMATION&gt;
+      &lt;VISUALDESCRIPTIONSCHEME XSI:TYPE="STILLREGIONFEATURETYPE"&gt;
+        &lt;DOMINANTCOLOR&gt;
+          &lt;SPATIALCOHERENCY&gt;13&lt;/SPATIALCOHERENCY&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;6&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;2 3 2&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;6&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;15 17 17&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;4&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;8 8 6&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;6&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;22 26 28&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;2&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;14 12 7&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;1&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;23 23 21&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+          &lt;VALUE&gt;
+            &lt;PERCENTAGE&gt;4&lt;/PERCENTAGE&gt;
+            &lt;INDEX&gt;14 13 12&lt;/INDEX&gt;
+          &lt;/VALUE&gt;
+        &lt;/DOMINANTCOLOR&gt;
+        &lt;SCALABLECOLOR NUMOFBITPLANESDISCARDED="0" NUMOFCOEFF="4"&gt;
+          &lt;COEFF&gt;
+            40 34 -86 -10 -30 -25 -2 26 -31 -27 27 20 -16 -3 -23 21 7 -3 -3 3
+            4 2 -1 0 -2 3 -15 1 -6 5 1 -4 3 0 -3 -3 2 1 2 4
+            3 -4 -5 0 0 2 4 5 -7 -3 0 -1 6 1 3 -1 -3 0 0 -2
+            1 0 -3 -3
+          &lt;/COEFF&gt;
+        &lt;/SCALABLECOLOR&gt;
+        &lt;COLORSTRUCTURE COLORQUANT="2"&gt;
+          &lt;VALUES&gt;
+            3 0 0 0 0 0 0 0 61 10 8 0 0 0 0 0 0 79 0 0
+            0 0 0 0 157 189 82 28 43 55 46 19 44 126 194 152 1 2 1 0
+            173 157 85 34 157 145 99 26 96 137 120 27 10 15 10 4 131 116 67 105
+            75 47 12 24
+          &lt;/VALUES&gt;
+        &lt;/COLORSTRUCTURE&gt;
+        &lt;COLORLAYOUT&gt;
+          &lt;YDCCOEFF&gt;23&lt;/YDCCOEFF&gt;
+          &lt;CBDCCOEFF&gt;30&lt;/CBDCCOEFF&gt;
+          &lt;CRDCCOEFF&gt;28&lt;/CRDCCOEFF&gt;
+          &lt;YACCOEFF5&gt;
+            5 23 22 13 8
+          &lt;/YACCOEFF5&gt;
+          &lt;CBACCOEFF5&gt;
+            14 19 20 16 15
+          &lt;/CBACCOEFF5&gt;
+          &lt;CRACCOEFF5&gt;
+            17 13 13 16 17
+          &lt;/CRACCOEFF5&gt;
+        &lt;/COLORLAYOUT&gt;
+        &lt;EDGE&gt;
+            &lt;BINCOUNTS&gt;
+              3 2 5 5 5 1 3 2 6 4 1 4 4 4 7 3 2 6 3 7
+              2 1 3 2 3 4 2 6 3 4 4 1 5 6 5 3 2 6 6 5
+              3 4 3 3 3 3 5 5 5 4 4 5 6 5 2 2 6 5 6 3
+              4 1 1 3 4 5 2 4 3 4 1 4 5 1 3 1 5 4 3 3
+            &lt;/BINCOUNTS&gt;
+        &lt;/EDGE&gt;
+        &lt;HOMOGENEOUSPATTERN&gt;
+          &lt;AVERAGE&gt;89&lt;/AVERAGE&gt;
+          &lt;STANDARDDEVIATION&gt;181&lt;/STANDARDDEVIATION&gt;
+            &lt;ENERGY&gt;
+              208 203 225 244 230 215 207 174 186 188 186 183 180 180 150
+              173 133 174 154 163 151 153 138 148 156 150 131 134 125 138
+            &lt;/ENERGY&gt;
+            &lt;ENERGYDEVIATION&gt;
+              207 199 226 245 232 210 199 162 181 184 173 171 168 177 133
+              161 116 175 143 137 150 137 134 148 145 124 104 128 94 119
+            &lt;/ENERGYDEVIATION&gt;
+        &lt;/HOMOGENEOUSPATTERN&gt;
+      &lt;/VISUALDESCRIPTIONSCHEME&gt;
+    &lt;/IMAGE&gt;
+  &lt;/DESCRIPTIONUNIT&gt;
+&lt;/MPEG7&gt;</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>44</value>
+  </metadata>
 </root>

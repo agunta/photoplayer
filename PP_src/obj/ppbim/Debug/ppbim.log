@@ -1,6 +1,8 @@
-﻿Build started 2013-07-11 12:42:31.
-     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\ppbim.vcxproj" on node 3 (build target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 2013-07-13 20:40:21.
+     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\ppbim.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "..\..\obj\ppbim\Debug\ppbim.lastbuildstate".
+       InitializeBuildStatus:
          Creating "..\..\obj\ppbim\Debug\ppbim.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../xercesc/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\obj\ppbim\Debug\\" /Fd"..\..\obj\ppbim\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\ColCreationInformationType.cpp ..\src\ColCreationType.cpp ..\src\ColKeyword_anonymousType.cpp ..\src\ColKeywordAnnotationType.cpp ..\src\CollectionType_attributes.cpp ..\src\CollectionType_content.cpp ..\src\ColMpeg7.cpp ..\src\ColTextAnnotationType.cpp ..\src\ContentCollectionType.cpp ..\src\ImageLocatorType.cpp ..\src\InlineMediaType.cpp ..\src\ReferenceType.cpp ..\src\TitleMediaType.cpp ..\src\Affiliation_anonymousType.cpp ..\src\AgentType.cpp ..\src\Base64Binary.cpp ..\src\BimXMLUtil.cpp ..\src\BitstreamReader.cpp ..\src\BitstreamWriter.cpp ..\src\ControlledTermUseType.cpp ..\src\CreationCoord_anonymusType.cpp ..\src\CreatorType.cpp ..\src\DescAnyUri.cpp ..\src\DescAnyUri_typecast.cpp ..\src\DescriptionMetadataType.cpp ..\src\DescriptionProfileType.cpp ..\src\DescString.cpp ..\src\DescString_typecast.cpp ..\src\ElectronicAddressType.cpp ..\src\GeographicPointType.cpp ..\src\GeographicPosition_anonymusType.cpp ..\src\HexBinary.cpp ..\src\InlineTermDefinitionType.cpp ..\src\MediaAgentType_content.cpp ..\src\MPEG7IntegerVector.cpp ..\src\Mpeg7Type_content.cpp ..\src\OrganizationType.cpp ..\src\PersonNameType.cpp ..\src\PersonType.cpp ..\src\PlaceType.cpp ..\src\PostalAddress_anonymousType.cpp ..\src\ProfileAndLevelIndication.cpp ..\src\TermReferenceType.cpp ..\src\TextualType.cpp ..\src\TimePointType.cpp ..\src\TimeType.cpp ..\src\UTFUtil.cpp ..\src\Frame_anonymousType.cpp ..\src\ImageType.cpp ..\src\ItemCreationCoord_anonymusType.cpp ..\src\ItemCreationInformationType.cpp ..\src\ItemCreationType.cpp ..\src\ItemMpeg7.cpp ..\src\ItemTimeType.cpp ..\src\MediaFormatType.cpp ..\src\MediaInformationType.cpp ..\src\MediaInstanceType.cpp ..\src\MediaLocatorType.cpp ..\src\MediaProfileType.cpp ..\src\NonNegativeInteger.cpp ..\src\NonNegativeInteger_typecast.cpp ..\src\SegmentType_content.cpp ..\src\StillRegionFeatureType.cpp ..\src\StillRegionType.cpp ..\src\UniqueIDType.cpp ..\src\VisualCoding_anonymousType.cpp ..\src\ColorLayoutType.cpp ..\src\ColorStructureType.cpp ..\src\CSValues_anonymousType.cpp ..\src\DominantColorType.cpp ..\src\DominantColorValueType.cpp ..\src\EdgeHistogramType.cpp ..\src\HomogeneousTextureType.cpp ..\src\ScalableColorType.cpp ..\src\ValueListType.cpp
@@ -166,8 +168,8 @@
        FinalizeBuildStatus:
          Deleting file "..\..\obj\ppbim\Debug\ppbim.unsuccessfulbuild".
          Touching "..\..\obj\ppbim\Debug\ppbim.lastbuildstate".
-     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\ppbim.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\ppbim\win32\ppbim.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:02:05.61
+Time Elapsed 00:01:10.61
