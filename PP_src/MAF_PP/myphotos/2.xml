@@ -1,0 +1,121 @@
+<Mpeg7 xmlns="urn:mpeg:maf:schema:photoplayer:item:2006" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:maf:schema:photoplayer:item:2006 ppmaf_item_schema.xsd">
+  <DescriptionMetadata>
+    <LastUpdate>2001-09-20T03:20:25+09:00</LastUpdate>
+    <Creator>
+      <Role href="urn:mpeg:mpeg7:cs:RoleCS:2001:AUTHOR">
+          <Name>Author</Name>
+      </Role>
+      <Agent xsi:type="PersonType">
+        <Name>
+          <GivenName>John</GivenName>
+          <FamilyName>Smith</FamilyName>
+        </Name>
+      </Agent>
+    </Creator>
+  </DescriptionMetadata>
+  <DescriptionUnit xsi:type="ImageType">
+    <Image>
+      <MediaInformation>
+        <MediaProfile>
+          <MediaFormat>
+            <Content href="urn:mpeg:mpeg7:cs:ContentCS:2001:4.1">
+                <Name>Image</Name>
+            </Content>
+            <FileSize>24969</FileSize>
+            <VisualCoding>
+              <Frame height="192" width="256"/>
+            </VisualCoding>
+          </MediaFormat>
+        </MediaProfile>
+      </MediaInformation>
+      <CreationInformation>
+        <Creation>
+          <Title>Guildford</Title>
+        </Creation>
+      </CreationInformation>
+      <VisualDescriptionScheme xsi:type="StillRegionFeatureType">
+        <DominantColor>
+          <SpatialCoherency>8</SpatialCoherency>
+          <Value>
+            <Percentage>3</Percentage>
+            <Index>5 6 3</Index>
+          </Value>
+          <Value>
+            <Percentage>1</Percentage>
+            <Index>15 18 19</Index>
+          </Value>
+          <Value>
+            <Percentage>5</Percentage>
+            <Index>14 12 7</Index>
+          </Value>
+          <Value>
+            <Percentage>10</Percentage>
+            <Index>12 12 9</Index>
+          </Value>
+          <Value>
+            <Percentage>4</Percentage>
+            <Index>24 27 27</Index>
+          </Value>
+          <Value>
+            <Percentage>5</Percentage>
+            <Index>19 19 16</Index>
+          </Value>
+          <Value>
+            <Percentage>1</Percentage>
+            <Index>21 17 11</Index>
+          </Value>
+        </DominantColor>
+        <ScalableColor numOfBitplanesDiscarded="0" numOfCoeff="4">
+          <Coeff>
+            44 -10 -118 6 -17 -6 11 28 -26 6 22 21 -26 -13 -9 22 7 -2 -3 4
+            12 -2 -5 1 3 5 -15 1 -9 5 -1 -3 3 3 3 5 3 2 1 4
+            8 1 -4 3 0 2 4 6 -9 -3 -2 1 7 2 3 -1 -2 -2 0 -2
+            -1 0 -3 -4
+          </Coeff>
+        </ScalableColor>
+        <ColorStructure colorQuant="2">
+          <Values>
+            21 3 0 0 6 0 0 3 113 50 92 17 0 2 3 1 25 58 7 9
+            0 0 10 4 163 255 180 42 51 89 123 74 41 83 119 119 9 16 5 0
+            85 136 120 18 66 110 130 78 40 64 100 78 14 25 10 2 24 47 45 51
+            42 54 27 8
+          </Values>
+        </ColorStructure>
+        <ColorLayout>
+          <YDCCoeff>27</YDCCoeff>
+          <CbDCCoeff>22</CbDCCoeff>
+          <CrDCCoeff>33</CrDCCoeff>
+          <YACCoeff5>
+            16 27 21 21 9
+          </YACCoeff5>
+          <CbACCoeff5>
+            22 18 20 18 16
+          </CbACCoeff5>
+          <CrACCoeff5>
+            11 14 13 14 16
+          </CrACCoeff5>
+        </ColorLayout>
+        <Edge>
+            <BinCounts>
+              4 3 6 4 6 2 2 6 6 7 3 4 4 6 4 5 1 7 5 4
+              3 2 5 7 6 4 2 4 6 6 4 4 6 5 4 5 0 5 2 4
+              3 5 3 4 4 3 3 7 4 4 6 2 3 5 2 6 0 3 4 2
+              1 3 7 1 4 0 0 6 0 1 2 0 3 4 3 1 0 2 2 1
+            </BinCounts>
+        </Edge>
+        <HomogeneousPattern>
+          <Average>141</Average>
+          <StandardDeviation>131</StandardDeviation>
+            <Energy>
+              220 212 195 185 195 210 207 184 178 171 178 179 182 190 164
+              178 158 174 154 171 175 162 172 158 162 173 172 141 165 163
+            </Energy>
+            <EnergyDeviation>
+              221 213 192 188 194 209 199 181 174 168 167 172 171 184 150
+              167 141 168 144 145 173 140 165 155 151 143 138 121 125 141
+            </EnergyDeviation>
+        </HomogeneousPattern>
+      </VisualDescriptionScheme>
+    </Image>
+  </DescriptionUnit>
+</Mpeg7>

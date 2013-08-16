@@ -47,12 +47,24 @@
 //
 
 #include "stdafx.h"
+#include <string> 
+#include <sstream>
+#include "getimage.h"
+#include <direct.h>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+
 //#include <fstream>
+
 
 ColMpeg7 *get_collection_bim(char *buf, int bufsize);
 
+
 //int _tmain(int argc, _TCHAR* argv[])
-int main(int argc, char* argv[])
+//int main(int argc, char* argv[])
+int getim (char* inputFile)
 {
 	ISOErr err = ISONoErr;
 	MP4TrackReader reader = NULL;
@@ -60,9 +72,13 @@ int main(int argc, char* argv[])
 	PhotoPlayerMAF *pplayer = NULL;
 	ImageList *imgList = NULL;
 	ColMpeg7 *colmpeg = NULL;
-	//char *inputFile = NULL;
 	bool bRetrieveAll = true;
-	int iNumber = 0;
+	
+	
+	
+	//int iNumber = 0;
+
+	
 
 	//if(argc < 2)
 	//{
@@ -84,17 +100,25 @@ int main(int argc, char* argv[])
 
 	//}
 
-	
-
 	pplayer = new PhotoPlayerMAF();
-	err = pplayer->OpenMovie(inputFile); if (err) goto bail;
+	err = pplayer->OpenMovie(inputFile); //if (err) goto bail;
 
 	int trackCount = pplayer->GetTrackCount();
-	if(iNumber > trackCount)
-	{
-		printf("Track %d not found\n", iNumber);
-		goto bail;
-	}
+
+	
+
+///////////////////////////////////////////////////////////////
+	//plik tekstowy
+	std::string tmp;
+	sprintf((char*)tmp.c_str(), "%d", trackCount);
+	std::string str = tmp.c_str();
+	//std::string s = std::to_string(trackCount);
+	const char* trc = str.c_str();
+    FILE * plik;
+    plik = fopen("plikmp4.txt", "wt" );
+    fprintf(plik, trc);
+    fclose( plik );
+///////////////////////////////////////////////////////////////
 
 	unsigned int bimsize = 0;
 	char *collbim = pplayer->GetCollectionBiM(&bimsize);
@@ -113,12 +137,13 @@ int main(int argc, char* argv[])
 	int refCount = pCollection->m_nReferenceCount; 
 	if(refCount<=0 || (pCollection->m_ppReferences == NULL))
 	{
-		printf("Empty collection\n");
+		//printf("Empty collection\n");
 		goto bail;
 	}
 
-	int i;
+	mkdir("myphotos");
 
+	int i;
 	for(i = 1; i <= trackCount; i++)
 	{
 
@@ -126,10 +151,10 @@ int main(int argc, char* argv[])
 		ISOTrack track;
 		err = pplayer->GetTrack(i, &track, &trackId); if (err) goto bail;
 
-		if(!bRetrieveAll && iNumber != trackId)
+	/*	if(!bRetrieveAll && iNumber != trackId)
 		{
 			continue;
-		}
+		}*/
 		// Check if the collection contains the trackId
 		int j;
 		bool bFound = false;
@@ -164,7 +189,7 @@ int main(int argc, char* argv[])
 		}
 
 		char outFileName[255];
-		sprintf(outFileName, "%d.jpg", trackId);
+		sprintf(outFileName, "myphotos/photo%d.jpg", trackId);
 		FILE *outFile = fopen(outFileName, "wb");
 		if(outFile)
 		{
@@ -172,6 +197,8 @@ int main(int argc, char* argv[])
 			printf("Extracting image media: %s (%d bytes)\n", outFileName,  unitSize);
 		}
 		fclose(outFile);
+
+		
 
 		ISODisposeHandle(sampleH);
 		sampleH = NULL;
@@ -183,7 +210,7 @@ int main(int argc, char* argv[])
 		if(bimdata)
 		{
 			char outFileName[32];
-			sprintf(outFileName, "%d.xml", trackId);
+			sprintf(outFileName, "myphotos/%d.xml", trackId);
 			if(item_bim_to_xml(bimdata, bimsize, outFileName))
 			{
 				printf("Extracting item metadata: %s\n", outFileName);
@@ -216,8 +243,8 @@ bail:
 	}
 	if(colmpeg) delete colmpeg;
 
-
-	return err;
+	return trackCount;
+	//return err;
 }
 
 ColMpeg7 *get_collection_bim(char *buf, int bufsize)
@@ -261,4 +288,5 @@ ColMpeg7 *get_collection_bim(char *buf, int bufsize)
 	if(reader) delete reader;
 
 	return mpegcol;
+	
 }

@@ -43,6 +43,8 @@
 // 
 // Copyright © 2007
 
+#pragma once
+
 struct JPEGInfo
 {
 	int width;

@@ -52,7 +52,7 @@ bool parse_collection_bim(PhotoPlayerMAF *pPlayer, char *buf, int bufsize);
 
 
 //int _tmain(int argc, _TCHAR* argv[])
-int main(int argc, char* argv[])
+/*int main(int argc, char* argv[])
 {
 	ISOErr err = ISONoErr;
 	PhotoPlayerMAF *pplayer = NULL;
@@ -94,7 +94,7 @@ bail:
 	}
 
 	return err;
-}
+}*/
 
 void print_collection(PhotoPlayerMAF *pPlayer, char *header, ContentCollectionType *pCollection)
 {

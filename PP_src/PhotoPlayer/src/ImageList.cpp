@@ -44,6 +44,7 @@
 // Copyright © 2007
 
 #include "stdafx.h"
+#include "ImageList.h"
 #include <fstream>
 
 //#include "../../ppbim/src/collectionbim.h"

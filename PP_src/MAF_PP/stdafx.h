@@ -3,4 +3,12 @@
 // are changed infrequently
 #pragma once
 
+#include <stdio.h>
+#include <tchar.h>
+#include "Form1.h"
+
+//#include "JPEGUtil.h"
+//#include "imagelist.h"
+//#include "photoplayer.h"
+//#include "ppbuilder.h"
 // TODO: reference additional headers your program requires here

@@ -44,8 +44,9 @@
 // Copyright © 2007
 
 #include "stdafx.h"
+#include "JPEGUtil.h"
 #include <setjmp.h>
-
+#include < stdio.h>
 /*
 extern "C"
 {

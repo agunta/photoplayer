@@ -1,21 +1,3 @@
-﻿Build started 2013-07-13 15:18:25.
-     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" on node 3 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "..\..\obj\PhotoPlayer\Debug\PPDataParser.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../libisomediafile/src /I../../libisomediafile/w32 /I../../jpeglib/include /I../../xercesc/include /I../../xmvisual/src/AddressLib /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"..\..\obj\PhotoPlayer\Debug\pp_dataparser.pch" /Fo"..\..\obj\PhotoPlayer\Debug\\" /Fd"..\..\obj\PhotoPlayer\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\ImageList.cpp ..\src\JPEGUtil.cpp ..\src\PhotoPlayer.cpp ..\src\pp_dataparser.cpp ..\src\PPDOMErrorHandler.cpp
-         PPDOMErrorHandler.cpp
-     1>c1xx : fatal error C1033: cannot open program database 'c:\users\agatka\desktop\photoplayer\pp_src\obj\photoplayer\debug\vc100.pdb'
-         pp_dataparser.cpp
-     1>c1xx : fatal error C1033: cannot open program database 'c:\users\agatka\desktop\photoplayer\pp_src\obj\photoplayer\debug\vc100.pdb'
-         PhotoPlayer.cpp
-     1>c1xx : fatal error C1033: cannot open program database 'c:\users\agatka\desktop\photoplayer\pp_src\obj\photoplayer\debug\vc100.pdb'
-         JPEGUtil.cpp
-     1>c1xx : fatal error C1033: cannot open program database 'c:\users\agatka\desktop\photoplayer\pp_src\obj\photoplayer\debug\vc100.pdb'
-         ImageList.cpp
-     1>c1xx : fatal error C1033: cannot open program database 'c:\users\agatka\desktop\photoplayer\pp_src\obj\photoplayer\debug\vc100.pdb'
-     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\PhotoPlayer.vcxproj" (build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:00.38
+﻿  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+.NETFramework,Version=v4.0.AssemblyAttributes.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  PhotoPlayer.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\..\..\out\PhotoPlayer\Debug\pp_dataparser.lib

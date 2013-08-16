@@ -47,6 +47,8 @@
 //
 
 #include "stdafx.h"
+#include "PhotoPlayer.h"
+#include <stdio.h>
 
 void PrintError(int err)
 {

@@ -1,13 +1,21 @@
 
 #include <fstream>
-#include <string> 
+#include <string>
+#include <cstdlib>
 #include <sstream>
-#include <windows.h>
 #include <tchar.h>
+#include <msclr\marshal_cppstd.h>
+#include "..\PhotoPlayer\src\getimage.h"
+
+
 #pragma once
+
+#include "EditXML.h"
 
 namespace MAF_PP {
 
+	using namespace msclr::interop;
+	using namespace System::Runtime::InteropServices;
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -22,7 +30,7 @@ namespace MAF_PP {
 	/// </summary>
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
-	static int trackCount=1;
+	static int photoNum=1;
 
 	public:
 		
@@ -35,6 +43,9 @@ namespace MAF_PP {
 			
 			
 		}
+
+	
+
 
 	protected:
 		/// <summary>
@@ -60,8 +71,14 @@ namespace MAF_PP {
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::TextBox^  textBox1;
+	public: System::Windows::Forms::TextBox^  textBox1;
+	private: 
+
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
+	private: System::Windows::Forms::ListBox^  listBox1;
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::OpenFileDialog^  openFileDialog2;
 
 	protected: 
 
@@ -84,7 +101,6 @@ namespace MAF_PP {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripTextBox1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -96,6 +112,10 @@ namespace MAF_PP {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->openFileDialog2 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->menuStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -154,10 +174,10 @@ namespace MAF_PP {
 			this->pictureBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) 
 				| System::Windows::Forms::AnchorStyles::Left) 
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->pictureBox1->ImageLocation = L"C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\1.jpg";
-			this->pictureBox1->Location = System::Drawing::Point(12, 40);
+			this->pictureBox1->BackColor = System::Drawing::Color::White;
+			this->pictureBox1->Location = System::Drawing::Point(190, 40);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(656, 554);
+			this->pictureBox1->Size = System::Drawing::Size(478, 371);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
@@ -166,10 +186,10 @@ namespace MAF_PP {
 			// 
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->button1->AutoSize = true;
-			this->button1->Location = System::Drawing::Point(12, 609);
+			this->button1->Location = System::Drawing::Point(190, 430);
 			this->button1->MaximumSize = System::Drawing::Size(184, 41);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(184, 41);
+			this->button1->Size = System::Drawing::Size(184, 23);
 			this->button1->TabIndex = 2;
 			this->button1->Text = L"<<";
 			this->button1->UseVisualStyleBackColor = true;
@@ -178,10 +198,10 @@ namespace MAF_PP {
 			// button2
 			// 
 			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button2->Location = System::Drawing::Point(484, 609);
+			this->button2->Location = System::Drawing::Point(484, 430);
 			this->button2->MaximumSize = System::Drawing::Size(184, 41);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(184, 41);
+			this->button2->Size = System::Drawing::Size(184, 23);
 			this->button2->TabIndex = 3;
 			this->button2->Text = L">>";
 			this->button2->UseVisualStyleBackColor = true;
@@ -191,22 +211,59 @@ namespace MAF_PP {
 			// 
 			this->textBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) 
 				| System::Windows::Forms::AnchorStyles::Right));
+			this->textBox1->BackColor = System::Drawing::Color::White;
 			this->textBox1->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
 			this->textBox1->Location = System::Drawing::Point(683, 40);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->ReadOnly = true;
-			this->textBox1->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textBox1->Size = System::Drawing::Size(300, 610);
+			this->textBox1->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox1->Size = System::Drawing::Size(300, 371);
 			this->textBox1->TabIndex = 4;
-			this->textBox1->Text = resources->GetString(L"textBox1.Text");
+			// 
+			// listBox1
+			// 
+			this->listBox1->FormattingEnabled = true;
+			this->listBox1->Location = System::Drawing::Point(12, 59);
+			this->listBox1->Name = L"listBox1";
+			this->listBox1->Size = System::Drawing::Size(159, 394);
+			this->listBox1->TabIndex = 5;
+			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::listBox1_SelectedIndexChanged);
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->ForeColor = System::Drawing::SystemColors::WindowText;
+			this->label1->Location = System::Drawing::Point(52, 43);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(71, 13);
+			this->label1->TabIndex = 6;
+			this->label1->Text = L"List of images";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(683, 430);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(286, 23);
+			this->button3->TabIndex = 7;
+			this->button3->Text = L"button3";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
+			// 
+			// openFileDialog2
+			// 
+			this->openFileDialog2->FileName = L"openFileDialog2";
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->ClientSize = System::Drawing::Size(995, 662);
+			this->ClientSize = System::Drawing::Size(995, 462);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->listBox1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -216,7 +273,6 @@ namespace MAF_PP {
 			this->Name = L"Form1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Photo Player";
-			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
@@ -227,10 +283,21 @@ namespace MAF_PP {
 		}
 #pragma endregion
 
-	private: System::Void toolStripTextBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+	public: System::Void toolStripTextBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+				 
 				 OpenFileDialog^ openFileDialog1 = gcnew OpenFileDialog;
 				 openFileDialog1->ShowDialog();
-				 pictureBox1->Load(openFileDialog1->FileName);
+				 String^ file = (openFileDialog1->FileName);
+				 char* inFile = (char*)(void*)Marshal::StringToHGlobalAnsi(file);	
+				 int trc = getim(inFile);			
+				 pictureBox1->Load("myphotos/photo1.jpg");
+				 readXML(photoNum);
+
+				 for(int i=1;i<=trc;i++)
+					{
+					listBox1->Items->Add("photo" + i);
+					}
+				
 			 }
 
 private: System::Void menuStrip1_ItemClicked(System::Object^  sender, System::Windows::Forms::ToolStripItemClickedEventArgs^  e) {
@@ -240,21 +307,33 @@ private: System::Void toolStripMenuItem1_Click(System::Object^  sender, System::
 private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 		 }
 
-private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-		trackCount++; 
+public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+		photoNum++; 
 		ostringstream ss;
-		ss << trackCount;
+		ss << photoNum;
 		string str = ss.str();
-		string fileName= "C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\"+str+".jpg";
+		string fileName= "myphotos/photo"+str+".jpg";
 		ifstream jpgFile(fileName);
 
-		if (jpgFile.fail()) {
-			trackCount = 1;
-		} 
-			pictureBox1->Load("C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\"+trackCount+".jpg");
-			//textBox1->Text=System::IO::File::ReadAllText("C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\"+trackCount+".xml");
-			//string xmlFile =  "C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\"+str+".xml";
-			XmlTextReader^ reader = gcnew XmlTextReader ("C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\2.xml");
+		if (jpgFile.good()) {
+		
+			pictureBox1->Load("myphotos/photo"+photoNum+".jpg");
+			readXML(photoNum);	 
+		}
+		 }
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		
+			if (photoNum != 1) {
+			photoNum--; 
+			pictureBox1->Load("myphotos/photo"+photoNum+".jpg");
+			readXML(photoNum);
+			}
+				
+		 }
+
+public: void readXML(int num){
+
+			XmlTextReader^ reader = gcnew XmlTextReader ("myphotos/"+num+".xml");
 			textBox1->Text = "";
 
     while (reader->Read()) 
@@ -284,17 +363,47 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 			//	textBox1->AppendText(reader->Name);
 			//	textBox1->AppendText("\r\n");
    //             break;
+				
         }
+		textBox1->SelectionStart = 0;
+		textBox1->ScrollToCaret();
+		textBox1->Refresh();
     }
-		 
+			
+		}
+private: System::Void listBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+			  int itemNum = listBox1->SelectedIndex;
+			  photoNum = ++itemNum;
+			  textBox1->Text = photoNum.ToString();
+			  pictureBox1->Load("myphotos/photo"+photoNum+".jpg");
+		      readXML(photoNum);
 		 }
-private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		
-			trackCount--; 
-			pictureBox1->Load("C:\\Users\\Agatka\\Desktop\\photoplayer\\PP_src\\bin\\"+trackCount+".jpg");
-		
 
-		
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+			/* if (textBox1->Text!="") { 
+				EditXML ^ edit = gcnew EditXML;
+				edit->ShowDialog();
+			 }
+	*/
+			OpenFileDialog^ openFileDialog2 = gcnew OpenFileDialog;
+				 openFileDialog2->ShowDialog();
+				 String^ xmlName = (openFileDialog2->FileName);
+			System::Xml::XmlDocument xmlDoc;
+			xmlDoc.Load(xmlName);
+
+			// find desired node
+			XmlNode ^node = xmlDoc.SelectSingleNode("//from");
+			if (node != nullptr)
+{
+			node->InnerText="AGATA"; 
+			}
+			else
+			{
+				textBox1->Text="node not found";
+			}
+			xmlDoc.Save(xmlName);
+			
+
 		 }
 };
 }

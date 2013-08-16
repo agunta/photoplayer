@@ -47,6 +47,7 @@
 //
 
 #include "stdafx.h"
+#include "PPBuilder.h"
 
 
 PPBuilderMAF::PPBuilderMAF()

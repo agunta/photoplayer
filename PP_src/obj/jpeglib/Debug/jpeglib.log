@@ -1,115 +1,52 @@
-﻿Build started 2013-07-13 20:40:45.
-     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\jpeglib.vcxproj" on node 2 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "../../obj/jpeglib/Debug\jpeglib.lastbuildstate".
-       InitializeBuildStatus:
-         Creating "../../obj/jpeglib/Debug\jpeglib.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../../obj/jpeglib/Debug\\" /Fd"../../obj/jpeglib/Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\jcapimin.c ..\jcapistd.c ..\jccoefct.c ..\jccolor.c ..\jcdctmgr.c ..\jchuff.c ..\jcinit.c ..\jcmainct.c ..\jcmarker.c ..\jcmaster.c ..\jcomapi.c ..\jcparam.c ..\jcphuff.c ..\jcprepct.c ..\jcsample.c ..\jctrans.c ..\jdapimin.c ..\jdapistd.c ..\jdatadst.c ..\jdatasrc.c ..\jdcoefct.c ..\jdcolor.c ..\jddctmgr.c ..\jdhuff.c ..\jdinput.c ..\jdmainct.c ..\jdmarker.c ..\jdmaster.c ..\jdmerge.c ..\jdphuff.c ..\jdpostct.c ..\jdsample.c ..\jdtrans.c ..\jerror.c ..\jfdctflt.c ..\jfdctfst.c ..\jfdctint.c ..\jidctflt.c ..\jidctfst.c ..\jidctint.c ..\jidctred.c ..\jmemmgr.c ..\jmemnobs.c ..\jquant1.c ..\jquant2.c ..\jutils.c
-         jutils.c
-         jquant2.c
-         jquant1.c
-         jmemnobs.c
-         jmemmgr.c
-         jidctred.c
-         jidctint.c
-         jidctfst.c
-         jidctflt.c
-         jfdctint.c
-         jfdctfst.c
-         jfdctflt.c
-         jerror.c
-         jdtrans.c
-         jdsample.c
-         jdpostct.c
-         jdphuff.c
-         jdmerge.c
-         jdmaster.c
-         jdmarker.c
-         Generating Code...
-         Compiling...
-         jdmainct.c
-         jdinput.c
-         jdhuff.c
-         jddctmgr.c
-         jdcolor.c
-         jdcoefct.c
-         jdatasrc.c
-         jdatadst.c
-         jdapistd.c
-         jdapimin.c
-         jctrans.c
-         jcsample.c
-         jcprepct.c
-         jcphuff.c
-         jcparam.c
-         jcomapi.c
-         jcmaster.c
-         jcmarker.c
-         jcmainct.c
-         jcinit.c
-         Generating Code...
-         Compiling...
-         jchuff.c
-         jcdctmgr.c
-         jccolor.c
-         jccoefct.c
-         jcapistd.c
-         jcapimin.c
-         Generating Code...
-       Lib:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"../../lib/Debug\jpeglib.lib" /NOLOGO ../../obj/jpeglib/Debug\jcapimin.obj
-         ../../obj/jpeglib/Debug\jcapistd.obj
-         ../../obj/jpeglib/Debug\jccoefct.obj
-         ../../obj/jpeglib/Debug\jccolor.obj
-         ../../obj/jpeglib/Debug\jcdctmgr.obj
-         ../../obj/jpeglib/Debug\jchuff.obj
-         ../../obj/jpeglib/Debug\jcinit.obj
-         ../../obj/jpeglib/Debug\jcmainct.obj
-         ../../obj/jpeglib/Debug\jcmarker.obj
-         ../../obj/jpeglib/Debug\jcmaster.obj
-         ../../obj/jpeglib/Debug\jcomapi.obj
-         ../../obj/jpeglib/Debug\jcparam.obj
-         ../../obj/jpeglib/Debug\jcphuff.obj
-         ../../obj/jpeglib/Debug\jcprepct.obj
-         ../../obj/jpeglib/Debug\jcsample.obj
-         ../../obj/jpeglib/Debug\jctrans.obj
-         ../../obj/jpeglib/Debug\jdapimin.obj
-         ../../obj/jpeglib/Debug\jdapistd.obj
-         ../../obj/jpeglib/Debug\jdatadst.obj
-         ../../obj/jpeglib/Debug\jdatasrc.obj
-         ../../obj/jpeglib/Debug\jdcoefct.obj
-         ../../obj/jpeglib/Debug\jdcolor.obj
-         ../../obj/jpeglib/Debug\jddctmgr.obj
-         ../../obj/jpeglib/Debug\jdhuff.obj
-         ../../obj/jpeglib/Debug\jdinput.obj
-         ../../obj/jpeglib/Debug\jdmainct.obj
-         ../../obj/jpeglib/Debug\jdmarker.obj
-         ../../obj/jpeglib/Debug\jdmaster.obj
-         ../../obj/jpeglib/Debug\jdmerge.obj
-         ../../obj/jpeglib/Debug\jdphuff.obj
-         ../../obj/jpeglib/Debug\jdpostct.obj
-         ../../obj/jpeglib/Debug\jdsample.obj
-         ../../obj/jpeglib/Debug\jdtrans.obj
-         ../../obj/jpeglib/Debug\jerror.obj
-         ../../obj/jpeglib/Debug\jfdctflt.obj
-         ../../obj/jpeglib/Debug\jfdctfst.obj
-         ../../obj/jpeglib/Debug\jfdctint.obj
-         ../../obj/jpeglib/Debug\jidctflt.obj
-         ../../obj/jpeglib/Debug\jidctfst.obj
-         ../../obj/jpeglib/Debug\jidctint.obj
-         ../../obj/jpeglib/Debug\jidctred.obj
-         ../../obj/jpeglib/Debug\jmemmgr.obj
-         ../../obj/jpeglib/Debug\jmemnobs.obj
-         ../../obj/jpeglib/Debug\jquant1.obj
-         ../../obj/jpeglib/Debug\jquant2.obj
-         ../../obj/jpeglib/Debug\jutils.obj
-         jpeglib.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\../../lib/Debug\jpeglib.lib
-       FinalizeBuildStatus:
-         Deleting file "../../obj/jpeglib/Debug\jpeglib.unsuccessfulbuild".
-         Touching "../../obj/jpeglib/Debug\jpeglib.lastbuildstate".
-     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\jpeglib.vcxproj" (rebuild target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:04.73
+﻿  jutils.c
+  jquant2.c
+  jquant1.c
+  jmemnobs.c
+  jmemmgr.c
+  jidctred.c
+  jidctint.c
+  jidctfst.c
+  jidctflt.c
+  jfdctint.c
+  jfdctfst.c
+  jfdctflt.c
+  jerror.c
+  jdtrans.c
+  jdsample.c
+  jdpostct.c
+  jdphuff.c
+  jdmerge.c
+  jdmaster.c
+  jdmarker.c
+  Generating Code...
+  Compiling...
+  jdmainct.c
+  jdinput.c
+  jdhuff.c
+  jddctmgr.c
+  jdcolor.c
+  jdcoefct.c
+  jdatasrc.c
+  jdatadst.c
+  jdapistd.c
+  jdapimin.c
+  jctrans.c
+  jcsample.c
+  jcprepct.c
+  jcphuff.c
+  jcparam.c
+  jcomapi.c
+  jcmaster.c
+  jcmarker.c
+  jcmainct.c
+  jcinit.c
+  Generating Code...
+  Compiling...
+  jchuff.c
+  jcdctmgr.c
+  jccolor.c
+  jccoefct.c
+  jcapistd.c
+  jcapimin.c
+  Generating Code...
+  jpeglib.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\jpeglib\w32\../../lib/Debug\jpeglib.lib

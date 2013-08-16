@@ -1,17 +1,3 @@
-﻿Build started 2013-07-13 15:18:18.
-     1>Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\PPMAFGetImage.vcxproj" on node 3 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "..\..\obj\PhotoPlayer\Debug\PPGetImage.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../libisomediafile/src /I../../libisomediafile/w32 /I../../jpeglib/include /I../../xercesc/include /I../../xmvisual/src/AddressLib /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"..\..\obj\PhotoPlayer\Debug\pp_getimage.pch" /Fo"..\..\obj\PhotoPlayer\Debug\\" /Fd"..\..\obj\PhotoPlayer\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\ImageList.cpp ..\src\JPEGUtil.cpp ..\src\PhotoPlayer.cpp ..\src\PP_getimage.cpp ..\src\PPDOMErrorHandler.cpp
-         PPDOMErrorHandler.cpp
-         PP_getimage.cpp
-     1>c:\users\agatka\desktop\photoplayer\pp_src\photoplayer\src\pp_getimage.cpp(90): error C2065: 'inputFile' : undeclared identifier
-         PhotoPlayer.cpp
-         JPEGUtil.cpp
-         ImageList.cpp
-     1>Done Building Project "C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\PPMAFGetImage.vcxproj" (build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:06.30
+﻿  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+.NETFramework,Version=v4.0.AssemblyAttributes.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  PPMAFGetImage.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\PhotoPlayer\win32\..\..\out\PhotoPlayer\Debug\pp_getimage.lib

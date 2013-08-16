@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  MAF_PP.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  PPLibs.lib(ImageList.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+  Finished generating code
+  MAF_PP.vcxproj -> C:\Users\Agatka\Desktop\photoplayer\PP_src\Release\MAF_PP.exe
